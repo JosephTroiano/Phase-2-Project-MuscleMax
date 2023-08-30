@@ -5,11 +5,24 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:rgb(124, 148, 176)
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#title {
+  font-size: 60px;
+  text-align: center;
+  color:rgb(47, 52, 56)
+}
+
+.nav-links {
+  color: rgb(47, 52, 56);
+  font-size: 30px;
+  margin-right: 60px;
 }
 
 Header {
