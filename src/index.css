@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:rgb(124, 148, 176)
+  background-color:rgb(29, 81, 69)
 }
 
 code {
@@ -13,18 +13,84 @@ code {
     monospace;
 }
 
-#title {
-  font-size: 70px;
+Header h1 {
+  font-size: 60px;
   text-align: center;
-  color:rgb(47, 52, 56)
+  color: rgb(255, 255, 255);
+}
+Header {}
+
+.main-nav-bar {
+  text-align: center;
+  font-size: 28px;
 }
 
-.nav-links {
-  color: rgb(47, 52, 56);
+#home-link {
+  color: aliceblue;
+  margin-right: 50px;
+}
+
+#workouts-link {
+  color: aliceblue;
+  margin-right: 50px;
+}
+
+#add-workout-link {
+  color:aliceblue; 
+  margin-right: 50px;
+}
+
+#settings-link {
+  color: aliceblue;
+}
+
+.home {
+  text-align: center;
   font-size: 30px;
-  margin-right: 60px;
+  margin-top: 150px;
 }
 
-Header {
+.cta-button {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.workout-list {
   text-align: center;
+}
+
+.workout-item {
+  border: 4px solid;
+  margin-bottom: 10px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: aliceblue;
+}
+
+#workouts-title {
+  font-size: 45px;
+  margin-top: 50px;
+}
+
+.add-workout {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 70px;
+  border: 4px solid;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+  background-color: aliceblue;
+}
+
+button {
+  margin-bottom: 30px;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+input {
+  height: 30px;
+  margin-bottom: 15px;
 }

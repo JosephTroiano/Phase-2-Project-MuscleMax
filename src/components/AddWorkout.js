@@ -24,7 +24,7 @@ const AddWorkout = ({ addWorkout }) => {
 
   return (
     <div className="add-workout">
-      <h2>Add Workout</h2>
+      <h2>Add a Workout</h2>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -32,24 +32,28 @@ const AddWorkout = ({ addWorkout }) => {
           value={exercise}
           onChange={e => setExercise(e.target.value)}
         />
+        <br></br>
         <input
           type="number"
           placeholder="Weight (lbs)"
           value={weight}
           onChange={e => setWeight(e.target.value)}
         />
+        <br></br>
         <input
           type="number"
           placeholder="Sets"
           value={sets}
           onChange={e => setSets(e.target.value)}
         />
+        <br></br>
         <input
           type="number"
           placeholder="Reps"
           value={reps}
           onChange={e => setReps(e.target.value)}
         />
+        <br></br>
         <button type="submit">Add</button>
       </form>
     </div>

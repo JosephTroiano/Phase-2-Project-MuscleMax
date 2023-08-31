@@ -5,7 +5,8 @@
         "name": "Bench Press",
         "weight": 135,
         "sets": 3,
-        "reps": 10
+        "reps": 10,
+        "day(s)": "Mon, Wed, Fri"
       },
       {
         "id": 2,

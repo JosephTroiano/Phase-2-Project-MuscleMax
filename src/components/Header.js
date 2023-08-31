@@ -4,18 +4,14 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <header>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/workouts">Workouts</Link>
-          </li>
-          <li>
-            <Link to="/add-workout">Add Workout</Link>
-          </li>
-        </ul>
+        <h1>
+            MuscleMax
+        </h1>
+      <nav className="main-nav-bar">
+            <Link to="/" id="home-link">Home</Link>
+            <Link to="/workouts" id="workouts-link">Workouts</Link>
+            <Link to="/add-workout" id="add-workout-link">Add Workout</Link>
+            <Link to="/settings" id="settings-link">Settings</Link>
       </nav>
     </header>
   );

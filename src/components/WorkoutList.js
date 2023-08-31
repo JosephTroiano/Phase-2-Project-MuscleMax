@@ -4,7 +4,7 @@ import WorkoutItem from './WorkoutItem';
 const WorkoutList = ({ workouts }) => {
   return (
     <div className="workout-list">
-      <h2>Workouts</h2>
+      <h2 id="workouts-title">Workouts</h2>
       {workouts.map(workout => (
         <WorkoutItem key={workout.id} workout={workout} />
       ))}
