@@ -1,26 +1,24 @@
-import React from "react";
-import { Link } from "react-router-dom"
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-
-
-function Header() {
-    return (
-        <header>
-            <h1 id="title">MuscleMax</h1>
-            <Link to="/" className="nav-links">
-                Home
-            </Link>
-            <Link to="/workouts" className="nav-links">
-                Workouts
-            </Link>
-            <Link to="/progress" className="nav-links">
-                Progress
-            </Link>
-            <Link to="/settings" className="nav-links">
-                Settings
-            </Link>
-        </header>
-    )
-}
+const Header = () => {
+  return (
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/workouts">Workouts</Link>
+          </li>
+          <li>
+            <Link to="/add-workout">Add Workout</Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
+};
 
 export default Header;
