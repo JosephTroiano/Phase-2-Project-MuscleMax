@@ -6,19 +6,41 @@ const AddWorkout = ({ addWorkout }) => {
   const [sets, setSets] = useState('');
   const [reps, setReps] = useState('');
 
-  const handleSubmit = e => {
+  const handleSubmit = async e => {
     e.preventDefault();
     if (exercise && weight && sets && reps) {
-      addWorkout({
+      const newWorkout = {
         exercise,
         weight: parseInt(weight),
         sets: parseInt(sets),
         reps: parseInt(reps)
-      });
-      setExercise('');
-      setWeight('');
-      setSets('');
-      setReps('');
+      };
+
+      // Call the addWorkout function to add to local state
+      addWorkout(newWorkout);
+
+      // Send POST request to the server
+      try {
+        const response = await fetch('http://localhost:3000/workouts', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(newWorkout)
+        });
+
+        if (!response.ok) {
+          throw new Error('Error adding workout to server');
+        }
+
+        // Clear form fields
+        setExercise('');
+        setWeight('');
+        setSets('');
+        setReps('');
+      } catch (error) {
+        console.error('Error adding workout:', error);
+      }
     }
   };
 

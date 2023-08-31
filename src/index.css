@@ -94,3 +94,48 @@ input {
   height: 30px;
   margin-bottom: 15px;
 }
+
+#edit-button {
+  font-size: 20px;
+  margin-bottom: 15px;
+  background-color: rgb(129, 162, 155)
+}
+
+#delete-button {
+  font-size: 20px;
+  background-color: brown;
+  margin-left: 30px;
+}
+
+.settings {
+  text-align: center;
+  border: 2px solid;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+#exercise {
+  width: 110px;
+  margin-left: 10px;
+  margin-top: 10px;
+  height: 20px;
+}
+
+#weight {
+  width: 40px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+#sets {
+  width: 30px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+#save-button {
+  font-size: 20px;
+  background-color:rgb(129, 162, 155);
+}

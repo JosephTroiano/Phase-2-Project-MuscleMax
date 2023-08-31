@@ -1,40 +1,27 @@
 {
-    "workouts": [
-      {
-        "id": 1,
-        "name": "Bench Press",
-        "weight": 135,
-        "sets": 3,
-        "reps": 10,
-        "day(s)": "Mon, Wed, Fri"
-      },
-      {
-        "id": 2,
-        "name": "Squat",
-        "weight": 225,
-        "sets": 4,
-        "reps": 8
-      },
-      {
-        "id": 3,
-        "name": "Dumbbell Curl",
-        "weight": 30,
-        "sets": 3,
-        "reps": 12
-      },
-      {
-        "id": 4,
-        "name": "Millitary Press",
-        "weight": 100,
-        "sets": 4,
-        "reps": 8
-      },
-      {
-        "id": 5,
-        "name": "Deadlift",
-        "weight": 275,
-        "sets": 3,
-        "reps": 5
-      }
-    ]
-  }
+  "workouts": [
+    {
+      "id": 1,
+      "exercise": "Bench Press",
+      "weight": 135,
+      "sets": 3,
+      "reps": 10,
+      "days": "Mon, Wed, Fri"
+    },
+    {
+      "id": 2,
+      "exercise": "Squat",
+      "weight": 225,
+      "sets": 4,
+      "reps": 8,
+      "days": "Tues, Thur, Sat"
+    },
+    {
+      "exercise": "Millitary Press",
+      "weight": 185,
+      "sets": 4,
+      "reps": 12,
+      "id": 3
+    }
+  ]
+}
