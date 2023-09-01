@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:rgb(29, 81, 69)
+  background-color:rgb(116, 116, 119)
 }
 
 code {
@@ -17,12 +17,19 @@ Header h1 {
   font-size: 60px;
   text-align: center;
   color: rgb(255, 255, 255);
+  
 }
-Header {}
+
+
 
 .main-nav-bar {
   text-align: center;
   font-size: 28px;
+  border: 5px solid;
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0);
+  max-width: 87%;
+  margin: auto;
 }
 
 #home-link {
@@ -69,8 +76,9 @@ Header {}
 }
 
 #workouts-title {
-  font-size: 45px;
+  font-size: 48px;
   margin-top: 50px;
+  
 }
 
 .add-workout {

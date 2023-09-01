@@ -5,6 +5,7 @@ const AddWorkout = ({ addWorkout }) => {
   const [weight, setWeight] = useState('');
   const [sets, setSets] = useState('');
   const [reps, setReps] = useState('');
+  const [days, setDays] = useState('');
 
   const handleSubmit = async e => {
     e.preventDefault();
@@ -13,13 +14,14 @@ const AddWorkout = ({ addWorkout }) => {
         exercise,
         weight: parseInt(weight),
         sets: parseInt(sets),
-        reps: parseInt(reps)
+        reps: parseInt(reps),
+        days
       };
 
-      // Call the addWorkout function to add to local state
+     
       addWorkout(newWorkout);
 
-      // Send POST request to the server
+      
       try {
         const response = await fetch('http://localhost:3000/workouts', {
           method: 'POST',
@@ -33,11 +35,12 @@ const AddWorkout = ({ addWorkout }) => {
           throw new Error('Error adding workout to server');
         }
 
-        // Clear form fields
+        
         setExercise('');
         setWeight('');
         setSets('');
         setReps('');
+        setDays('');
       } catch (error) {
         console.error('Error adding workout:', error);
       }
@@ -74,6 +77,13 @@ const AddWorkout = ({ addWorkout }) => {
           placeholder="Reps"
           value={reps}
           onChange={e => setReps(e.target.value)}
+        />
+        <br></br>
+        <input 
+          type="text"
+          placeholder="Days"
+          value={days}
+          onChange={e => setDays(e.target.value)}
         />
         <br></br>
         <button type="submit">Add</button>
