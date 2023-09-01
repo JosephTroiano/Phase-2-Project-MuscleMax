@@ -139,3 +139,9 @@ input {
   font-size: 20px;
   background-color:rgb(129, 162, 155);
 }
+
+#days {
+  width: 140px;
+  height: 20px;
+  margin-left: 10px;
+}

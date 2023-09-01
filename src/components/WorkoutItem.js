@@ -66,6 +66,16 @@ const WorkoutItem = ({ workout, onEdit, onDelete }) => {
             onChange={handleInputChange}
           />
           </div>
+          <div>
+            <label htmlFor="days">Days:</label>
+            <input
+              type="text"
+              id="days"
+              name="days"
+              value={editedWorkout.days}
+              onChange={handleInputChange}
+              />
+          </div>
           <button id="save-button" onClick={handleSaveClick}>Save</button>
         </>
       ) : (
