@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header>
         <h1>
-            MuscleMAX
+            MuscleMax
         </h1>
       <nav className="main-nav-bar">
             <Link to="/" id="home-link">Home</Link>
