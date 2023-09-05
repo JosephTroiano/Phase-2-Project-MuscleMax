@@ -1,20 +1,36 @@
 {
   "workouts": [
     {
-      "id": 1,
-      "exercise": "Bench Press",
-      "weight": 135,
-      "sets": 3,
-      "reps": 10,
-      "days": "Mon, Wed, Fri"
-    },
-    {
       "id": 2,
       "exercise": "Squat",
       "weight": 225,
       "sets": 4,
       "reps": 8,
       "days": "Tues, Thur, Sat"
+    },
+    {
+      "exercise": "Curls",
+      "weight": 25,
+      "sets": 4,
+      "reps": 12,
+      "days": "Thur, Fri",
+      "id": 3
+    },
+    {
+      "exercise": "Skullcrushers",
+      "weight": 75,
+      "sets": 3,
+      "reps": 8,
+      "days": "Mon, Wed, Fri",
+      "id": 4
+    },
+    {
+      "exercise": "Tricep Extensions",
+      "weight": 45,
+      "sets": 4,
+      "reps": 12,
+      "days": "Sat",
+      "id": 5
     }
   ]
 }
