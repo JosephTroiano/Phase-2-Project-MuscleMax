@@ -3,12 +3,11 @@ import React, { useState } from "react";
 const Settings = () => {
   const [showGoodbyeMessage, setShowGoodbyeMessage] = useState(false);
 
-  // Event handler to show the "Goodbye" message
+  
   const handleSignOutClick = () => {
     setShowGoodbyeMessage(true);
 
-    // You can perform the sign-out logic here.
-    // For this example, we'll just show the message.
+ 
   };
 
   return (

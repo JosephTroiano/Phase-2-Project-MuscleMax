@@ -31,6 +31,14 @@
       "reps": 12,
       "days": "Sat",
       "id": 5
+    },
+    {
+      "exercise": "Lat Pulldowns",
+      "weight": 185,
+      "sets": 4,
+      "reps": 12,
+      "days": "Wed, Fri",
+      "id": 6
     }
   ]
 }

@@ -17,7 +17,6 @@ const WorkoutList = ({ workouts, setWorkouts }) => {
     const searchTerm = e.target.value;
     setSearch(searchTerm);
   
-
     const filteredWorkouts = workouts.filter(workout => {
       if (searchTerm === "") {
         return true; 
