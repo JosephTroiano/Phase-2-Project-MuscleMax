@@ -3,19 +3,19 @@ import SignupForm from './SignupForm';
 
 const Home = () => {
   const [showSignupForm, setShowSignupForm] = useState(false);
-  const [formSubmitted, setFormSubmitted] = useState(false); // Track form submission
+  const [formSubmitted, setFormSubmitted] = useState(false); 
 
   const toggleSignupForm = () => {
     setShowSignupForm(!showSignupForm);
 
-    // Reset formSubmitted state when cancel is clicked
+    
     if (formSubmitted) {
       setFormSubmitted(false);
     }
   };
 
   const handleFormSubmit = () => {
-    // Set formSubmitted state to true when the form is submitted
+    
     setFormSubmitted(true);
   };
 
