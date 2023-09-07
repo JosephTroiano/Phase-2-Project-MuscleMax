@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:rgb(149, 149, 151)
+  background-color:rgb(47, 68, 111)
 }
 
 code {
@@ -19,8 +19,6 @@ Header h1 {
   color: rgb(255, 255, 255);
   
 }
-
-
 
 .main-nav-bar {
   text-align: center;
@@ -172,4 +170,10 @@ input {
 
 #search-workouts {
   margin-left: 5px;
+}
+
+.home-content {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
