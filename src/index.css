@@ -30,21 +30,9 @@ Header h1 {
   margin-right: auto;
 }
 
-#home-link {
+.nav-link {
+  margin-left: 80px;
   color: aliceblue;
-  margin-right: 40px;
-
-}
-
-#workouts-link {
-  color: aliceblue;
-  margin-right: 30px;
-  margin-left: 100px;
-}
-
-#add-workout-link {
-  color: aliceblue;
-  margin-left: 60px;
 }
 
 #add-workout-form {

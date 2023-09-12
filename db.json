@@ -63,6 +63,14 @@
       "reps": "12",
       "days": "Wed, Sat",
       "id": 9
+    },
+    {
+      "exercise": "Sit Ups",
+      "weight": "30",
+      "sets": "3",
+      "reps": "15",
+      "days": "Every other",
+      "id": 10
     }
   ]
 }
