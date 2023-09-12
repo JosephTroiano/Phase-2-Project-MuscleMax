@@ -39,6 +39,22 @@
       "reps": 12,
       "days": "Wed, Fri",
       "id": 6
+    },
+    {
+      "exercise": "Push Ups",
+      "weight": "0",
+      "sets": "5",
+      "reps": "20",
+      "days": "Everyday",
+      "id": 7
+    },
+    {
+      "exercise": "Leg Raisins",
+      "weight": "0",
+      "sets": "3",
+      "reps": "12",
+      "days": "Every other day",
+      "id": 8
     }
   ]
 }

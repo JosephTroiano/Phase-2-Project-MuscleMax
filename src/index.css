@@ -14,166 +14,103 @@ code {
 }
 
 Header h1 {
-  font-size: 60px;
   text-align: center;
-  color: rgb(255, 255, 255);
-  
+  font-size: 60px;
+  color: aliceblue;
 }
 
-.main-nav-bar {
+.nav-bar {
   text-align: center;
-  font-size: 28px;
-  border: 5px solid rgb(35, 35, 35);
+  font-size: 30px;
+  background-color: black;
+  border: 2px solid;
   border-radius: 5px;
-  background-color: rgb(35, 35, 35);
-  max-width: 87%;
-  margin: auto;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #home-link {
   color: aliceblue;
-  margin-right: 50px;
+  margin-right: 40px;
+
 }
 
 #workouts-link {
   color: aliceblue;
-  margin-right: 50px;
+  margin-right: 40px;
 }
 
 #add-workout-link {
-  color:aliceblue; 
-  margin-right: 50px;
+  color: aliceblue;
+  margin-right: 40px;
 }
 
 #settings-link {
   color: aliceblue;
 }
 
-.home {
+#add-workout-form {
   text-align: center;
-  font-size: 30px;
-  margin-top: 150px;
-}
-
-.demo-buttons {
-  font-size: 20px;
-  margin-right: 10px;
-}
-
-.workout-list {
-  text-align: center;
-}
-
-.workout-item {
-  border: 4px solid;
-  margin-bottom: 20px;
+  border: 3px solid;
+  width: 40%;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
   background-color: aliceblue;
+  margin-top: 80px;
 }
 
-#workouts-title {
-  font-size: 48px;
-  margin-top: 50px;
-  
+#add-workout-form h1 {
+  margin-bottom: 20px;
+  font-size: 40px;
+  margin-top: 20px;
 }
 
-.add-workout {
+#add-workout-form input {
+  margin-bottom: 25px;
+}
+
+#add-workout-form label {
+  font-size: 20px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+#add-workout-form #days {
+  margin-bottom: 40px;
+}
+
+#workout-list-title {
   text-align: center;
-  font-size: 30px;
-  margin-top: 70px;
-  border: 4px solid;
+  font-size: 45px;
+}
+
+.workout-card {
+  text-align: center;
+  border: 3px solid;
+  background-color: aliceblue;
   margin-left: auto;
   margin-right: auto;
   width: 45%;
-  background-color: aliceblue;
+  margin-bottom: 20px;
 }
 
-button {
-  margin-bottom: 30px;
-  font-size: 25px;
-  margin-top: 10px;
-}
-
-input {
-  height: 30px;
-  margin-bottom: 15px;
+.workout-card button {
+  margin-bottom: 10px;
 }
 
 #edit-button {
-  font-size: 20px;
-  margin-bottom: 15px;
-  background-color: rgb(129, 162, 155)
+  margin-right: 20px;
+  font-size: 15px;
+  background-color: rgb(126, 152, 135);
 }
 
 #delete-button {
-  font-size: 20px;
+  font-size: 15px;
   background-color: brown;
-  margin-left: 30px;
 }
 
-.settings {
-  text-align: center;
-  border: 2px solid;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px;
-}
-
-#exercise {
-  width: 110px;
-  margin-left: 10px;
-  margin-top: 10px;
-  height: 20px;
-}
-
-#weight {
-  width: 40px;
-  height: 20px;
-  margin-left: 10px;
-}
-
-#sets {
-  width: 30px;
-  height: 20px;
-  margin-left: 10px;
-}
-
-#save-button {
+#add-workout-form button {
+  margin-bottom: 20px;
   font-size: 20px;
-  background-color:rgb(129, 162, 155);
-}
-
-#days {
-  width: 140px;
-  height: 20px;
-  margin-left: 10px;
-}
-
-#sign-up-form {
-  border: 3px solid;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: aliceblue;
-}
-
-#sign-up-form input {
-  margin-top: 10px;
-}
-
-#sign-up-form button {
-  font-size: 20px;
-}
-
-#search-workouts {
-  margin-left: 5px;
-}
-
-.home-content {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
 }
