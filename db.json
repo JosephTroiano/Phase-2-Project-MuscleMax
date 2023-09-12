@@ -55,6 +55,14 @@
       "reps": "12",
       "days": "Every other day",
       "id": 8
+    },
+    {
+      "exercise": "Cable curls",
+      "weight": "65",
+      "sets": "4",
+      "reps": "12",
+      "days": "Wed, Sat",
+      "id": 9
     }
   ]
 }

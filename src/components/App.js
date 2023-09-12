@@ -19,11 +19,11 @@ function App() {
     .catch((error) => {
       console.log(error)
     });
-  }, []);
+  }, []); 
   
   function addWorkout(newWorkout) {
     setWorkouts([...workouts, newWorkout])
-  }
+  } 
   
 
   return (
