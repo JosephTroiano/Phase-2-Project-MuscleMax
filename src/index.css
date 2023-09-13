@@ -61,8 +61,24 @@ Header h1 {
   font-weight: bold;
 }
 
-#add-workout-form #days {
-  margin-bottom: 40px;
+#add-workout-form input[name="exercise"] {
+  width: 130px;
+}
+
+#add-workout-form input[name="days"] {
+  width: 100px;
+}
+
+#add-workout-form input[name="weight"] {
+  width: 40px;
+}
+
+#add-workout-form input[name="sets"] {
+  width: 30px;
+}
+
+#add-workout-form input[name="reps"] {
+  width: 30px;
 }
 
 #workout-list-title {
@@ -98,4 +114,38 @@ Header h1 {
 #add-workout-form button {
   margin-bottom: 20px;
   font-size: 20px;
+}
+
+#edit-form label {
+  font-size: 18px;
+}
+
+#edit-form input {
+  margin-bottom: 20px;
+  margin-top: 8px;
+}
+
+#edit-form input[name="weight"] {
+  width: 40px
+}
+
+#edit-form input[name="sets"] {
+  width: 30px
+}
+
+#edit-form input[name="reps"] {
+  width: 30px
+}
+
+#edit-form button {
+  background-color: rgb(126, 152, 135);
+  font-size: 15px;
+}
+
+#edit-form input[name="exercise"] {
+  width: 120px;
+}
+
+#edit-form input[name="days"] {
+  width: 100px;
 }

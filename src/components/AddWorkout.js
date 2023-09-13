@@ -26,10 +26,11 @@ function AddWorkout({ onAddWorkout }) {
       body: JSON.stringify(newWorkout)
     })
     .then((r) => r.json())
-    .then(console.log("workout added"));
-
-
-    onAddWorkout(newWorkout)
+    .then((data) => {
+      onAddWorkout(data)
+    });
+    
+    
 
     setExercise('')
     setWeight('')
@@ -47,13 +48,15 @@ function AddWorkout({ onAddWorkout }) {
         <label>Name:</label>
         <input
           type="text"
+          name="exercise"
           value={exercise}
           onChange={(e) => setExercise(e.target.value)}
         />
         <br></br>
-        <label>Weight:</label>
+        <label>Weight(lbs):</label>
         <input
           type="number"
+          name="weight"
           value={weight}
           onChange={(e) => setWeight(e.target.value)}
         />
@@ -61,6 +64,7 @@ function AddWorkout({ onAddWorkout }) {
         <label>Sets:</label>
         <input
           type="number"
+          name="sets"
           value={sets}
           onChange={(e) => setSets(e.target.value)}
         />
@@ -68,6 +72,7 @@ function AddWorkout({ onAddWorkout }) {
         <label>Reps:</label>
         <input
           type="number"
+          name="reps"
           value={reps}
           onChange={(e) => setReps(e.target.value)}
         />
@@ -75,6 +80,7 @@ function AddWorkout({ onAddWorkout }) {
         <label>Days:</label>
         <input
           type="text"
+          name="days"
           value={days}
           onChange={(e) => setDays(e.target.value)}
         />

@@ -1,24 +1,8 @@
 {
   "workouts": [
     {
-      "id": 2,
-      "exercise": "Squat",
-      "weight": 225,
-      "sets": 4,
-      "reps": 8,
-      "days": "Tues, Thur, Sat"
-    },
-    {
-      "exercise": "Curls",
-      "weight": 25,
-      "sets": 4,
-      "reps": 12,
-      "days": "Thur, Fri",
-      "id": 3
-    },
-    {
       "exercise": "Skullcrushers",
-      "weight": 75,
+      "weight": "174",
       "sets": 3,
       "reps": 8,
       "days": "Mon, Wed, Fri",
@@ -49,28 +33,12 @@
       "id": 7
     },
     {
-      "exercise": "Leg Raisins",
-      "weight": "0",
-      "sets": "3",
-      "reps": "12",
-      "days": "Every other day",
-      "id": 8
-    },
-    {
-      "exercise": "Cable curls",
-      "weight": "65",
+      "exercise": "Bench Press",
+      "weight": "285",
       "sets": "4",
-      "reps": "12",
-      "days": "Wed, Sat",
+      "reps": "10",
+      "days": "Mon, Tues",
       "id": 9
-    },
-    {
-      "exercise": "Sit Ups",
-      "weight": "30",
-      "sets": "3",
-      "reps": "15",
-      "days": "Every other",
-      "id": 10
     }
   ]
 }

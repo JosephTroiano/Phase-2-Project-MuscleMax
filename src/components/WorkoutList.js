@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
 import WorkoutItem from "./WorkoutItem";
 
-function WorkoutList({ workouts }) {
+function WorkoutList({ workouts, onDeleteWorkout, onSave }) {
 
-
-  
   return (
     <div>
       <h1 id="workout-list-title">
@@ -14,10 +12,12 @@ function WorkoutList({ workouts }) {
       <WorkoutItem
         key={workout.id}
         workout={workout}
+        onDeleteWorkout={onDeleteWorkout}
+        onSave={onSave}
       />
     ))}
     </div>
   )
 }
 
-export default WorkoutList
+export default WorkoutList;

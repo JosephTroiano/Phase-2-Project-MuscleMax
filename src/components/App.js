@@ -8,7 +8,7 @@ import AddWorkout from "./AddWorkout";
 
 
 function App() {
-  const [workouts, setWorkouts] = useState([])
+  const [workouts, setWorkouts] = useState([]);
 
   useEffect(() => {
     fetch(`http://localhost:3000/workouts`)
@@ -24,6 +24,52 @@ function App() {
   function addWorkout(newWorkout) {
     setWorkouts([...workouts, newWorkout])
   } 
+
+  function saveWorkout(editedWorkout) {
+    const updatedWorkouts = workouts.map((workout) => {
+      if (workout.id === editedWorkout.id) {
+        return editedWorkout;
+      } else {
+        return workout;
+      }
+    })
+
+    setWorkouts(updatedWorkouts)
+
+    fetch(`http://localhost:3000/workouts/${editedWorkout.id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(editedWorkout)
+    })
+    .then((r) => r.json())
+    .then(() => {console.log("Success")})
+    .catch((error) => {
+      console.log(error)
+    })
+  }
+  
+
+  function deleteWorkout(deletedWorkout) {
+    const updatedWorkouts = workouts.filter((workout) => 
+    workout.id !== deletedWorkout.id);
+    setWorkouts(updatedWorkouts);
+
+    fetch(`http://localhost:3000/workouts/${deletedWorkout.id}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(deletedWorkout)
+    })
+    .then((r) => r.json())
+    .then(() => {console.log("Success")})
+    .catch((error) => {
+      console.log(error)
+    });
+  
+  }
   
 
   return (
@@ -31,7 +77,7 @@ function App() {
     <Header />
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/workouts" element={<WorkoutList workouts={workouts} />} />
+      <Route path="/workouts" element={<WorkoutList workouts={workouts} onDeleteWorkout={deleteWorkout} onSave={saveWorkout}/>} />
       <Route path="/add-workout" element={<AddWorkout onAddWorkout={addWorkout} />} />
     </Routes>
    </div>
