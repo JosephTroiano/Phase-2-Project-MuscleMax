@@ -1,9 +1,9 @@
 {
   "workouts": [
     {
-      "exercise": "Skullcrushers",
-      "weight": "174",
-      "sets": 3,
+      "exercise": "Skullcrusher",
+      "weight": "167",
+      "sets": "2",
       "reps": 8,
       "days": "Mon, Wed, Fri",
       "id": 4
@@ -23,14 +23,6 @@
       "reps": 12,
       "days": "Wed, Fri",
       "id": 6
-    },
-    {
-      "exercise": "Push Ups",
-      "weight": "0",
-      "sets": "5",
-      "reps": "20",
-      "days": "Everyday",
-      "id": 7
     },
     {
       "exercise": "Bench Press",
