@@ -6,7 +6,7 @@ function WorkoutList({ workouts, onDeleteWorkout, onSave }) {
   return (
     <div>
       <h1 id="workout-list-title">
-        Workouts
+         Workouts 
       </h1>
     {workouts.map((workout) => (
       <WorkoutItem

@@ -4,6 +4,7 @@ import React, { useState } from "react";
 function WorkoutItem({ workout, onDeleteWorkout, onSave }) {
   const [isEditing, setIsEditing] = useState(false);
   const [editedWorkout, setEditedWorkout] = useState({ ...workout });
+  const [isFavorite, setIsFavorite] = useState(false)
 
   function handleEditClick() {
     setIsEditing(true)
@@ -24,6 +25,10 @@ function WorkoutItem({ workout, onDeleteWorkout, onSave }) {
 
   function handleDeleteClick() {
     onDeleteWorkout(workout)
+  }
+
+  function handleFavClick() {
+    setIsFavorite((isFavorite) => !isFavorite)
   }
 
   return (
@@ -81,6 +86,12 @@ function WorkoutItem({ workout, onDeleteWorkout, onSave }) {
       <p>Days: {workout.days}</p>
       <button id="edit-button" onClick={handleEditClick}>EDIT</button>
       <button id="delete-button" onClick={handleDeleteClick}>DELETE</button>
+      {isFavorite ? (
+        <button id='fav-button' onClick={handleFavClick}>★</button> )
+        : (
+          <button id='fav-button' onClick={handleFavClick}>✩</button>
+        )
+      }
       </>
       )}
     </div>
