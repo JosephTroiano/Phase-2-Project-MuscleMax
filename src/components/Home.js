@@ -2,8 +2,15 @@ import React from "react";
 
 function Home() {
   return (
-    <h1>Welcome Home</h1>
+    <div id="home-page-message">
+      <h1>Welcome to the MuscleMax App!</h1>
+      <p>Your personal companion for tracking your weightlifting 
+        workouts and improving your fitness journey.
+      </p>
+      <button id="sign-up-button">Sign up</button>
+      <button id="log-in-button">Log in</button>
+    </div>
   )
 }
 
-export default Home
+export default Home;
