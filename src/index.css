@@ -48,7 +48,7 @@ Header h1 {
 }
 
 #add-workout-form h1 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 40px;
   margin-top: 20px;
 }
@@ -196,4 +196,60 @@ Header h1 {
   margin-right: 30px;
   margin-top: 20px;
   font-weight: bold;
+}
+
+#sign-up-form {
+  text-align: center;
+  margin-top: 80px;
+  border: 3px solid;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  background-color: aliceblue;
+}
+
+#sign-up-form input {
+  margin-bottom: 25px;
+}
+
+#sign-up-form label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#sign-up-form button {
+  margin-top: 0;
+  margin-bottom: 18px; 
+  font-size: large;
+  font-weight: bold;
+}
+
+#log-in-form {
+  text-align: center;
+  margin-top: 80px;
+  border: 3px solid;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  background-color: aliceblue;
+}
+
+#log-in-form input {
+  margin-bottom: 25px;
+} 
+
+#log-in-form label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#log-in-form button {
+  margin-top: 0;
+  margin-bottom: 18px; 
+  font-size: large;
+  font-weight: bold;
+}
+
+#go-back-button {
+  margin-right: 40px;
 }
