@@ -87,7 +87,7 @@ function WorkoutItem({ workout, onDeleteWorkout, onSave }) {
       <button id="edit-button" onClick={handleEditClick}>EDIT</button>
       <button id="delete-button" onClick={handleDeleteClick}>DELETE</button>
       {isFavorite ? (
-        <button id='fav-button' onClick={handleFavClick}>★</button> )
+        <button id='fav-button' onClick={handleFavClick}>⭐️</button> )
         : (
           <button id='fav-button' onClick={handleFavClick}>✩</button>
         )
