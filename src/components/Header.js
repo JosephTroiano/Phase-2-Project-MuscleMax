@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 function Header() {
   return (
     <header>
-      <h1>MuscleMAX </h1>
+      <h1>MuscleMAX</h1>
       <nav className="nav-bar">
         <Link to="/" className="nav-link">Home</Link>
         <Link to="/workouts" className="nav-link">Workouts</Link>

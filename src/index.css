@@ -116,7 +116,7 @@ Header h1 {
 
 .workout-card {
   text-align: center;
-  border: 4px solid;
+  border: 3px solid;
   background-color: rgb(255, 255, 255);
   margin-left: auto;
   margin-right: auto;
@@ -243,11 +243,11 @@ Header h1 {
   margin-bottom: 25px;
   border: 2px solid;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 #sign-up-form label {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
 }
 
@@ -274,11 +274,11 @@ Header h1 {
   margin-bottom: 25px;
   border: 2px solid;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 15px;
+  font-size: 18px;
 } 
 
 #log-in-form label {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
 }
 
@@ -339,4 +339,20 @@ Header h1 {
   margin-left: auto;
   margin-right: auto;
   background-color: white;
+}
+
+#search-workouts {
+  text-align: center;
+  font-size: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+
+#search-workouts input {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid;
+  font-size: 20px;
+  width: 15%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }

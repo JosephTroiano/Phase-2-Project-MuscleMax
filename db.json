@@ -31,6 +31,14 @@
       "reps": "5",
       "days": "Mon, Wed, Fri",
       "id": 10
+    },
+    {
+      "exercise": "Skullcrusher",
+      "weight": "75",
+      "sets": "3",
+      "reps": "3",
+      "days": "NEVER",
+      "id": 11
     }
   ]
 }
