@@ -1,16 +1,8 @@
 {
   "workouts": [
     {
-      "exercise": "Skullcrusher",
-      "weight": "80",
-      "sets": "2",
-      "reps": 8,
-      "days": "Mon, Wed, Fri",
-      "id": 4
-    },
-    {
       "exercise": "Tricep Extensions",
-      "weight": 45,
+      "weight": "50",
       "sets": 4,
       "reps": 12,
       "days": "Sat",
@@ -31,6 +23,14 @@
       "reps": "10",
       "days": "Mon, Tues",
       "id": 9
+    },
+    {
+      "exercise": "Squat",
+      "weight": "300",
+      "sets": "3",
+      "reps": "5",
+      "days": "Mon, Wed, Fri",
+      "id": 10
     }
   ]
 }

@@ -5,6 +5,16 @@ function Home() {
   const [showHomeMessage, setShowHomeMessage] = useState(true);
   const [showSignUpForm, setShowSignUpForm] = useState(false);
   const [showLogInForm, setShowLogInForm] = useState(false);
+  const [showSignedUpMessage, setShowSignedUpMessage] = useState(false)
+  const [showLoggedInMessage, setShowLoggedInMessage] = useState(false)
+
+  const [signUpName, setSignUpName] = useState('');
+  const [signUpEmail, setSignUpEmail] = useState('');
+  const [signUpPassword, setSignUpPassword] = useState('');
+ 
+  
+  const [logInName, setLogInName] = useState('');
+  const [logInPassword, setLogInPassword] = useState('');
 
   function handleSignUpClick() {
     setShowSignUpForm(true)
@@ -22,8 +32,24 @@ function Home() {
     setShowHomeMessage(true)
     setShowLogInForm(false)
     setShowSignUpForm(false)
-    
   }
+
+  function handleSignedUpClick() {
+    setShowSignedUpMessage(true)
+    setShowHomeMessage(false)
+    setShowSignUpForm(false)
+    setShowLogInForm(false)
+    setShowLoggedInMessage(false)
+  }
+
+  function handleLoggedInClick() {
+    setShowLoggedInMessage(true)
+    setShowSignedUpMessage(false)
+    setShowHomeMessage(false)
+    setShowLogInForm(false)
+    setShowSignUpForm(false)
+  }
+
 
 
   return (
@@ -42,29 +68,54 @@ function Home() {
         <div id="sign-up-form">
           <h2>Sign up here: </h2>
           <label>Username: </label>
-          <input type="text" />
+          <input 
+          type="text"
+          value={signUpName}
+          onChange={(e) => setSignUpName(e.target.value)} />
           <br></br>
           <label>Email: </label>
-          <input type="email" />
+          <input 
+          type="email"
+          value={signUpEmail}
+          onChange={(e) => setSignUpEmail(e.target.value)} />
           <br></br>
-          <label>Passowrd: </label>
-          <input type="password" />
+          <label>Password: </label>
+          <input 
+          type="password"
+          value={signUpPassword}
+          onChange={(e) => setSignUpPassword(e.target.value)} />
           <br></br>
           <button id="go-back-button" onClick={handleGoBackClick}>← Go back</button>
-          <button id="sign-up!-button">Sign up →</button>
+          <button id="sign-up→-button" onClick={handleSignedUpClick}>Sign up →</button>
         </div>
       )}
       {showLogInForm && (
         <div id="log-in-form">
           <h2>Log in now: </h2>
           <label>Username: </label>
-          <input type="text" />
+          <input 
+          type="text"
+          value={logInName}
+          onChange={(e) => setLogInName(e.target.value)} />
           <br></br>
-          <label>Passowrd: </label>
-          <input type="password" />
+          <label>Password: </label>
+          <input 
+          type="password"
+          value={logInPassword}
+          onChange={(e) => setLogInPassword(e.target.value)} />
           <br></br>
           <button id="go-back-button" onClick={handleGoBackClick}>← Go back</button>
-          <button>Log in →</button>
+          <button onClick={handleLoggedInClick}>Log in →</button>
+        </div>
+      )}
+      {showSignedUpMessage && (
+        <div id="signed-up-message">
+          <h1>Welcome, {signUpName}!</h1>
+        </div>
+      )}
+      {showLoggedInMessage && (
+        <div id="logged-in-message">
+          <h1>Welcome back, {logInName}!</h1>
         </div>
       )}
     </div>
