@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:rgb(121, 121, 121);
+  background-color:rgb(56, 66, 82);
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
   
 }
@@ -70,6 +70,7 @@ Header h1 {
   border: 2px solid;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 20px;
+  color: rgb(56, 66, 82);
 }
 
 #add-workout-form label {
@@ -134,16 +135,18 @@ Header h1 {
 .workout-card h2 {
   font-weight: bold;
   font-size: 30px;
+  color: rgb(56, 66, 82);
+  text-decoration:underline;
 }
 
 .workout-card p {
   font-weight: bold;
   font-size: 22px;
-  color: rgb(0, 0, 0);
+  color:rgb(0, 0, 0);
 }
 
 .workout-card span {
-  color: rgb(0, 0, 0);
+  color: rgb(56, 66, 82);
   margin-left: 10px;
 }
 
@@ -178,6 +181,7 @@ Header h1 {
   border: 2px solid;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 18px;
+  color: rgb(56, 66, 82);
 }
 
 #edit-form input[name="weight"] {
