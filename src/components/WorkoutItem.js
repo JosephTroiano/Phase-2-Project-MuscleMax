@@ -80,7 +80,7 @@ function WorkoutItem({ workout, onDeleteWorkout, onSave }) {
       ) : (
         <>
       <h2>{workout.exercise}</h2>
-      <p>Weight: <span>{workout.weight}</span></p>
+      <p>Weight(lbs): <span>{workout.weight}</span></p>
       <p>Sets: <span>{workout.sets}</span></p>
       <p>Reps: <span>{workout.reps}</span></p>
       <p>Days: <span>{workout.days}</span></p>
