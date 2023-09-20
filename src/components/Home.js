@@ -12,7 +12,6 @@ function Home() {
   const [signUpEmail, setSignUpEmail] = useState('');
   const [signUpPassword, setSignUpPassword] = useState('');
  
-  
   const [logInName, setLogInName] = useState('');
   const [logInPassword, setLogInPassword] = useState('');
 

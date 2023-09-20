@@ -80,16 +80,16 @@ function WorkoutItem({ workout, onDeleteWorkout, onSave }) {
       ) : (
         <>
       <h2>{workout.exercise}</h2>
-      <p>Weight: {workout.weight}</p>
-      <p>Sets: {workout.sets}</p>
-      <p>Reps: {workout.reps}</p>
-      <p>Days: {workout.days}</p>
+      <p>Weight: <span>{workout.weight}</span></p>
+      <p>Sets: <span>{workout.sets}</span></p>
+      <p>Reps: <span>{workout.reps}</span></p>
+      <p>Days: <span>{workout.days}</span></p>
       <button id="edit-button" onClick={handleEditClick}>EDIT</button>
       <button id="delete-button" onClick={handleDeleteClick}>DELETE</button>
       {isFavorite ? (
-        <button id='fav-button' onClick={handleFavClick}>★</button> )
+        <button id='fav-button-clicked' onClick={handleFavClick}>★</button> )
         : (
-          <button id='fav-button' onClick={handleFavClick}>✩</button>
+          <button id='fav-button' onClick={handleFavClick}>☆</button>
         )
       }
       </>

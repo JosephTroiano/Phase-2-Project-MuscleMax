@@ -25,20 +25,20 @@
       "id": 9
     },
     {
-      "exercise": "Squat",
-      "weight": "300",
-      "sets": "3",
-      "reps": "5",
-      "days": "Mon, Wed, Fri",
-      "id": 10
-    },
-    {
       "exercise": "Skullcrusher",
       "weight": "75",
-      "sets": "3",
-      "reps": "3",
-      "days": "NEVER",
+      "sets": "4",
+      "reps": "10",
+      "days": "MWF",
       "id": 11
+    },
+    {
+      "exercise": "Dips",
+      "weight": "0",
+      "sets": "3",
+      "reps": "15",
+      "days": "Thur, Fri",
+      "id": 12
     }
   ]
 }
