@@ -33,12 +33,12 @@
       "id": 11
     },
     {
-      "exercise": "Dips",
-      "weight": "0",
-      "sets": "3",
+      "exercise": "Squat",
+      "weight": "285",
+      "sets": "2",
       "reps": "15",
-      "days": "Thur, Fri",
-      "id": 12
+      "days": "M, W, F",
+      "id": 13
     }
   ]
 }

@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:rgb(56, 66, 82);
+  background-color:rgb(57, 67, 83);
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
   
 }
@@ -93,15 +93,15 @@ Header h1 {
 }
 
 #add-workout-form input[name="weight"] {
-  width: 40px;
+  width: 50px;
 }
 
 #add-workout-form input[name="sets"] {
-  width: 30px;
+  width: 35px;
 }
 
 #add-workout-form input[name="reps"] {
-  width: 30px;
+  width: 35px;
 }
 
 #workout-list-title {
