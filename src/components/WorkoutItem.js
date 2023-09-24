@@ -35,7 +35,7 @@ function WorkoutItem({ workout, onDeleteWorkout, onSave }) {
     <div className="workout-card">
       {isEditing ? (
         <div id="edit-form">
-          <label>Name : </label>
+          <label>Name: </label>
           <input
             type="text"
             name="exercise"
@@ -43,7 +43,7 @@ function WorkoutItem({ workout, onDeleteWorkout, onSave }) {
             onChange={handleInputChange}
           />
           <br></br>
-          <label>Weight (lbs) : </label>
+          <label>Weight (lbs): </label>
           <input
             type="number"
             name="weight"
@@ -51,7 +51,7 @@ function WorkoutItem({ workout, onDeleteWorkout, onSave }) {
             onChange={handleInputChange}
           />
           <br></br>
-          <label>Sets : </label>
+          <label>Sets: </label>
           <input
             type="number"
             name="sets"
@@ -59,7 +59,7 @@ function WorkoutItem({ workout, onDeleteWorkout, onSave }) {
             onChange={handleInputChange}
           />
           <br></br>
-          <label>Reps : </label>
+          <label>Reps: </label>
           <input 
             type="number"
             name="reps"
@@ -67,7 +67,7 @@ function WorkoutItem({ workout, onDeleteWorkout, onSave }) {
             onChange={handleInputChange}
           />
           <br></br>
-          <label>Days : </label>
+          <label>Days: </label>
           <input
             type="text"
             name="days"
@@ -80,10 +80,10 @@ function WorkoutItem({ workout, onDeleteWorkout, onSave }) {
       ) : (
         <>
       <h2>{workout.exercise}</h2>
-      <p>Weight (lbs) : <span>{workout.weight}</span></p>
-      <p>Sets : <span>{workout.sets}</span></p>
-      <p>Reps : <span>{workout.reps}</span></p>
-      <p>Days : <span>{workout.days}</span></p>
+      <p>Weight (lbs): <span>{workout.weight}</span></p>
+      <p>Sets: <span>{workout.sets}</span></p>
+      <p>Reps: <span>{workout.reps}</span></p>
+      <p>Days: <span>{workout.days}</span></p>
       <button id="edit-button" onClick={handleEditClick}>EDIT</button>
       <button id="delete-button" onClick={handleDeleteClick}>DELETE</button>
       {isFavorite ? (

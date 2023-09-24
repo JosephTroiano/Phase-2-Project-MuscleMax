@@ -114,7 +114,7 @@ function Home() {
       )}
       {showLoggedInMessage && (
         <div id="logged-in-message">
-          <h1>Welcome back, {logInName}!</h1>
+          <h1>Welcome back , {logInName}!</h1>
         </div>
       )}
     </div>

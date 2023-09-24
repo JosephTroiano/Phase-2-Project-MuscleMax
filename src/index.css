@@ -85,23 +85,23 @@ Header h1 {
 }
 
 #add-workout-form input[name="exercise"] {
-  width: 130px;
+  width: 150px;
 }
 
 #add-workout-form input[name="days"] {
-  width: 100px;
+  width: 140px;
 }
 
 #add-workout-form input[name="weight"] {
-  width: 50px;
+  width: 60px;
 }
 
 #add-workout-form input[name="sets"] {
-  width: 35px;
+  width: 40px;
 }
 
 #add-workout-form input[name="reps"] {
-  width: 35px;
+  width: 40px;
 }
 
 #workout-list-title {

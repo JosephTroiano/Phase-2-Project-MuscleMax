@@ -39,6 +39,14 @@
       "reps": "15",
       "days": "M, W, F",
       "id": 13
+    },
+    {
+      "exercise": "Incline Press",
+      "weight": "75",
+      "sets": "4",
+      "reps": "12",
+      "days": "T, TH, SAT",
+      "id": 14
     }
   ]
 }
