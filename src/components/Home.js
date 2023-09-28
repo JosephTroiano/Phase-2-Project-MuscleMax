@@ -1,124 +1,88 @@
 import React, { useState } from "react";
 
 function Home() {
-  
-  const [showHomeMessage, setShowHomeMessage] = useState(true);
-  const [showSignUpForm, setShowSignUpForm] = useState(false);
-  const [showLogInForm, setShowLogInForm] = useState(false);
-  const [showSignedUpMessage, setShowSignedUpMessage] = useState(false)
-  const [showLoggedInMessage, setShowLoggedInMessage] = useState(false)
+  const [view, setView] = useState("home");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [isSignedUp, setIsSignedUp] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  const [signUpName, setSignUpName] = useState('');
-  const [signUpEmail, setSignUpEmail] = useState('');
-  const [signUpPassword, setSignUpPassword] = useState('');
- 
-  const [logInName, setLogInName] = useState('');
-  const [logInPassword, setLogInPassword] = useState('');
+  const [formError, setFormError] = useState("");
 
-  function handleSignUpClick() {
-    setShowSignUpForm(true)
-    setShowLogInForm(false)
-    setShowHomeMessage(false)
-  }
+  function handleButtonClick(newView) {
+    setView(newView);
+    setIsSignedUp(false); 
+    setIsLoggedIn(false); 
+    setFormError(""); 
+  };
 
-  function handleLogInClick() {
-    setShowLogInForm(true)
-    setShowSignUpForm(false)
-    setShowHomeMessage(false)
-  }
+  function handleFormSubmit(e) {
+    e.preventDefault();
+    
+    
+    if (view === "sign-up" && (!name || !email || !password)) {
+      setFormError("**PLEASE FILL OUT ALL FIELDS**");
+      return;
+    } else if (view === "log-in" && (!name || !password)) {
+      setFormError("**PLEASE FILL OUT ALL FIELDS**");
+      return;
+    }
 
-  function handleGoBackClick() {
-    setShowHomeMessage(true)
-    setShowLogInForm(false)
-    setShowSignUpForm(false)
-  }
+    setFormError("");
 
-  function handleSignedUpClick() {
-    setShowSignedUpMessage(true)
-    setShowHomeMessage(false)
-    setShowSignUpForm(false)
-    setShowLogInForm(false)
-    setShowLoggedInMessage(false)
-  }
-
-  function handleLoggedInClick() {
-    setShowLoggedInMessage(true)
-    setShowSignedUpMessage(false)
-    setShowHomeMessage(false)
-    setShowLogInForm(false)
-    setShowSignUpForm(false)
-  }
-
-
+    if (view === "sign-up") {
+      setIsSignedUp(true); 
+    } else if (view === "log-in") {
+      setIsLoggedIn(true); 
+    }
+  };
 
   return (
     <div id="home-page">
-      {showHomeMessage && (
+      {view === "home" && (
         <div id="home-page-message">
           <h1>Welcome to the MuscleMax App!</h1>
-          <p>Your personal companion for tracking your weightlifting 
-        workouts and improving your fitness journey.
-          </p>
-          <button id="sign-up-button" onClick={handleSignUpClick}>Sign up</button>
-          <button id="log-in-button" onClick={handleLogInClick}>Log in</button>
-       </div>
-      )}
-      {showSignUpForm && (
-        <div id="sign-up-form">
-          <h2>Sign up here: </h2>
-          <label>Username: </label>
-          <input 
-          type="text"
-          value={signUpName}
-          onChange={(e) => setSignUpName(e.target.value)} />
-          <br></br>
-          <label>Email: </label>
-          <input 
-          type="email"
-          value={signUpEmail}
-          onChange={(e) => setSignUpEmail(e.target.value)} />
-          <br></br>
-          <label>Password: </label>
-          <input 
-          type="password"
-          value={signUpPassword}
-          onChange={(e) => setSignUpPassword(e.target.value)} />
-          <br></br>
-          <button id="go-back-button" onClick={handleGoBackClick}>← Go back</button>
-          <button id="sign-up→-button" onClick={handleSignedUpClick}>Sign up →</button>
+          <p>Your personal companion for tracking your weightlifting workouts and improving your fitness journey.</p>
+          <button id="sign-up-button" onClick={() => handleButtonClick("sign-up")}>Sign up</button>
+          <button id="log-in-button" onClick={() => handleButtonClick("log-in")}>Log in</button>
         </div>
       )}
-      {showLogInForm && (
-        <div id="log-in-form">
-          <h2>Log in now: </h2>
-          <label>Username: </label>
-          <input 
-          type="text"
-          value={logInName}
-          onChange={(e) => setLogInName(e.target.value)} />
-          <br></br>
-          <label>Password: </label>
-          <input 
-          type="password"
-          value={logInPassword}
-          onChange={(e) => setLogInPassword(e.target.value)} />
-          <br></br>
-          <button id="go-back-button" onClick={handleGoBackClick}>← Go back</button>
-          <button onClick={handleLoggedInClick}>Log in →</button>
+      {(view === "sign-up" || view === "log-in") && !isSignedUp && !isLoggedIn && (
+        <div id={`${view}-form`}>
+          <h2>{view === "sign-up" ? "Sign up here:" : "Log in now:"}</h2>
+          <form onSubmit={handleFormSubmit}>
+            <label>Username:</label>
+            <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+            <br />
+            {view === "sign-up" && (
+              <>
+                <label>Email:</label>
+                <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                <br />
+              </>
+            )}
+            <label>Password:</label>
+            <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+            <br />
+            <button id="go-back-button" onClick={() => handleButtonClick("home")}>← Go back</button>
+            <button type="submit">{view === "sign-up" ? "Sign up →" : "Log in →"}</button>
+            {formError && <p className="error">{formError}</p>}
+          </form>
         </div>
       )}
-      {showSignedUpMessage && (
+      {isSignedUp && (
         <div id="signed-up-message">
-          <h1>Welcome, {signUpName}!</h1>
+          <h1>Welcome, {name}!</h1>
         </div>
       )}
-      {showLoggedInMessage && (
+      {isLoggedIn && (
         <div id="logged-in-message">
-          <h1>Welcome back , {logInName}!</h1>
+          <h1>Welcome back, {name}!</h1>
         </div>
       )}
     </div>
-  )
+  );
 }
 
 export default Home;

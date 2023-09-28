@@ -10,6 +10,9 @@ function AddWorkout({ onAddWorkout }) {
   function handleSubmit(e) {
     e.preventDefault()
 
+    if (exercise.length && weight.length && sets.length && reps.length 
+       && days.length > 0) {
+
     const newWorkout = {
       exercise: exercise,
       weight: weight,
@@ -29,8 +32,6 @@ function AddWorkout({ onAddWorkout }) {
     .then((data) => {
       onAddWorkout(data)
     });
-    
-    
 
     setExercise('')
     setWeight('')
@@ -38,7 +39,14 @@ function AddWorkout({ onAddWorkout }) {
     setReps('')
     setDays('')
 
-  }
+    alert("Workout Added!")
+
+
+  } else {
+    alert("CANNOT SUBMIT EMPTY FORM")
+  }};
+
+  
 
   return (
     <div>

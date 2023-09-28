@@ -249,6 +249,10 @@ Header h1 {
   background-color: rgb(255, 255, 255);
 }
 
+#sign-up-form h2 {
+  font-size: 28px;
+}
+
 #sign-up-form input {
   margin-bottom: 25px;
   border: 2px solid;
@@ -259,12 +263,13 @@ Header h1 {
 #sign-up-form label {
   font-size: 25px;
   font-weight: bold;
+  margin-right: 10px;
 }
 
 #sign-up-form button {
   margin-top: 0;
   margin-bottom: 18px; 
-  font-size: large;
+  font-size: 20px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   border: 2px solid;
   cursor: pointer;
@@ -280,6 +285,10 @@ Header h1 {
   background-color: rgb(255, 255, 255);
 }
 
+#log-in-form h2 {
+  font-size: 28px;
+}
+
 #log-in-form input {
   margin-bottom: 25px;
   border: 2px solid;
@@ -290,12 +299,13 @@ Header h1 {
 #log-in-form label {
   font-size: 25px;
   font-weight: bold;
+  margin-right: 10px;
 }
 
 #log-in-form button {
   margin-top: 0;
   margin-bottom: 18px; 
-  font-size: large;
+  font-size: 20px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   border: 2px solid;
   cursor: pointer;
@@ -375,4 +385,9 @@ Header h1 {
   font-size: 30px;
   cursor: pointer;
   color: gold;
+}
+
+.error {
+  color: red;
+  font-size: 20px;
 }
