@@ -251,6 +251,7 @@ Header h1 {
 
 #sign-up-form h2 {
   font-size: 28px;
+  text-decoration: underline;
 }
 
 #sign-up-form input {
@@ -287,6 +288,7 @@ Header h1 {
 
 #log-in-form h2 {
   font-size: 28px;
+  text-decoration: underline;
 }
 
 #log-in-form input {
@@ -390,4 +392,19 @@ Header h1 {
 .error {
   color: red;
   font-size: 20px;
+}
+
+#sort-label {
+  margin-left: 30px;
+
+}
+
+#sort-checkbox {
+  margin-left: -30px;
+  height: 20px;
+  
+}
+
+#search-label {
+
 }

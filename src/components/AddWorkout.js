@@ -43,10 +43,10 @@ function AddWorkout({ onAddWorkout }) {
 
 
   } else {
-    alert("CANNOT SUBMIT EMPTY FORM")
+    alert("**PLEASE FILL OUT ALL FIELDS**")
   }};
 
-  
+
 
   return (
     <div>

@@ -4,9 +4,21 @@ import WorkoutItem from "./WorkoutItem";
 function WorkoutList({ workouts, onDeleteWorkout, onSave }) {
 
   const [searchTerm, setSearchTerm] = useState('');
+  const [sortByWeight, setSortByWeight] = useState(false)
 
-  const filteredWorkouts = workouts.filter((workout) => 
-  workout.exercise.toLowerCase().includes(searchTerm.toLowerCase()))
+  const filteredWorkouts = workouts
+    .filter((workout) => 
+      workout.exercise.toLowerCase().includes(searchTerm.toLowerCase()))
+    .slice();
+
+  if (sortByWeight) {
+    filteredWorkouts.sort((workout1, workout2) => 
+    workout1.weight - workout2.weight);
+  }
+
+  function handleSortByWeightChange() {
+    setSortByWeight((sortByWeight) => !sortByWeight)
+  }
   
 
   return (
@@ -15,11 +27,18 @@ function WorkoutList({ workouts, onDeleteWorkout, onSave }) {
          Workouts 
       </h1>
       <form id="search-workouts">
-        <label>Search: </label>
+        <label id="search-label">Search: </label>
         <input
           type="text"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
+        />
+        <label id="sort-label">Sort by Weight?</label>
+        <input
+          id="sort-checkbox"
+          type="checkbox"
+          checked={sortByWeight}
+          onChange={handleSortByWeightChange}
         />
       </form>
     {filteredWorkouts.map((workout) => (

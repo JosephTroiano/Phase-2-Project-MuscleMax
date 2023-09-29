@@ -20,13 +20,18 @@ MuscleMax is a fitness workout tracking application. It allows you to keep a rec
    npm install
    ```
 
-3. Start the app:
+3. Run the server:
+   ```shell
+   json-server --watch db.json
+   ```
+
+4. Start the app:
 
    ```shell
    npm start
    ```
 
-4. Access the app at [http://localhost:3000](http://localhost:3000).
+5. Access the app at [http://localhost:3000](http://localhost:3000).
 
 ## Usage
 

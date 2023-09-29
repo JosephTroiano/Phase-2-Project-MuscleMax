@@ -42,7 +42,7 @@ function Home() {
     <div id="home-page">
       {view === "home" && (
         <div id="home-page-message">
-          <h1>Welcome to the MuscleMax App!</h1>
+          <h1>Welcome to the MuscleMAX App!</h1>
           <p>Your personal companion for tracking your weightlifting workouts and improving your fitness journey.</p>
           <button id="sign-up-button" onClick={() => handleButtonClick("sign-up")}>Sign up</button>
           <button id="log-in-button" onClick={() => handleButtonClick("log-in")}>Log in</button>
