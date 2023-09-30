@@ -18,7 +18,8 @@ function AddWorkout({ onAddWorkout }) {
       weight: weight,
       sets: sets,
       reps: reps,
-      days: days
+      days: days,
+      isFavorite: false
     }
 
     fetch(`http://localhost:3000/workouts`, {

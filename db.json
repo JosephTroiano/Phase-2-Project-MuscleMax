@@ -6,7 +6,8 @@
       "sets": 4,
       "reps": 12,
       "days": "Sat",
-      "id": 5
+      "id": 5,
+      "isFavorite": false
     },
     {
       "exercise": "Lat Pulldowns",
@@ -14,7 +15,8 @@
       "sets": 4,
       "reps": 12,
       "days": "Wed, Fri",
-      "id": 6
+      "id": 6,
+      "isFavorite": false
     },
     {
       "exercise": "Bench Press",
@@ -30,7 +32,8 @@
       "sets": "4",
       "reps": "10",
       "days": "MWF",
-      "id": 11
+      "id": 11,
+      "isFavorite": false
     },
     {
       "exercise": "Squat",
@@ -46,7 +49,17 @@
       "sets": "4",
       "reps": "12",
       "days": "T, TH, SAT",
-      "id": 14
+      "id": 14,
+      "isFavorite": false
+    },
+    {
+      "exercise": "Decline PRess",
+      "weight": "200",
+      "sets": "3",
+      "reps": "10",
+      "days": "Mon, Tues",
+      "isFavorite": false,
+      "id": 15
     }
   ]
 }

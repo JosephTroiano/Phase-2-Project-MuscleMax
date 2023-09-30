@@ -1,56 +1,64 @@
 import React, { useState, useEffect } from "react";
 import WorkoutItem from "./WorkoutItem";
 
-function WorkoutList({ workouts, onDeleteWorkout, onSave }) {
-
-  const [searchTerm, setSearchTerm] = useState('');
-  const [sortByWeight, setSortByWeight] = useState(false)
+function WorkoutList({ workouts, onDeleteWorkout, onSave, onToggleFavorite }) {
+  const [searchTerm, setSearchTerm] = useState("");
+  const [sortBy, setSortBy] = useState("none"); 
 
   const filteredWorkouts = workouts
-    .filter((workout) => 
-      workout.exercise.toLowerCase().includes(searchTerm.toLowerCase()))
+    .filter((workout) =>
+      workout.exercise.toLowerCase().includes(searchTerm.toLowerCase())
+    )
     .slice();
 
-  if (sortByWeight) {
-    filteredWorkouts.sort((workout1, workout2) => 
-    workout1.weight - workout2.weight);
+  if (sortBy === "lowToHigh") {
+    filteredWorkouts.sort((workout1, workout2) =>
+      workout1.weight - workout2.weight
+    );
+  } else if (sortBy === "highToLow") {
+    filteredWorkouts.sort((workout1, workout2) =>
+      workout2.weight - workout1.weight
+    );
   }
 
-  function handleSortByWeightChange() {
-    setSortByWeight((sortByWeight) => !sortByWeight)
+  function handleSortChange(event) {
+    setSortBy(event.target.value);
   }
-  
 
   return (
     <div>
-      <h1 id="workout-list-title">
-         Workouts 
-      </h1>
+      <h1 id="workout-list-title">Workouts</h1>
       <form id="search-workouts">
-        <label id="search-label">Search: </label>
+        <label id="search-label">Search by name: </label>
         <input
           type="text"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
-        <label id="sort-label">Sort by Weight?</label>
-        <input
-          id="sort-checkbox"
-          type="checkbox"
-          checked={sortByWeight}
-          onChange={handleSortByWeightChange}
-        />
+        <div>
+          <label htmlFor="sort-dropdown">Sort by weight: </label>
+          <select
+            id="sort-dropdown"
+            value={sortBy}
+            onChange={handleSortChange}
+          >
+            <option value="none"></option>
+            <option value="lowToHigh">Low → High</option>
+            <option value="highToLow">High → Low</option>
+          </select>
+        </div>
       </form>
-    {filteredWorkouts.map((workout) => (
-      <WorkoutItem
-        key={workout.id}
-        workout={workout}
-        onDeleteWorkout={onDeleteWorkout}
-        onSave={onSave}
-      />
-    ))}
+      {filteredWorkouts.map((workout) => (
+        <WorkoutItem
+          key={workout.id}
+          workout={workout}
+          onDeleteWorkout={onDeleteWorkout}
+          onSave={onSave}
+          onToggleFavorite={onToggleFavorite}
+        />
+      ))}
     </div>
-  )
+  );
 }
 
 export default WorkoutList;

@@ -68,7 +68,31 @@ function App() {
     .catch((error) => {
       console.log(error)
     });
-  
+  }
+
+  function toggleFavorite(workoutId, isFavorite) {
+    const updatedWorkouts = workouts.map((workout) => {
+      if (workout.id === workoutId) {
+
+        workout.isFavorite = isFavorite;
+      }
+      return workout;
+    });
+
+    fetch(`http://localhost:3000/workouts/${workoutId}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ isFavorite }),
+    })
+    .then((r) => r.json())
+    .then(() => {
+      console.log("Success")
+    })
+    .catch((error) => {
+      console.log(error)
+    });
   }
   
 
@@ -77,7 +101,15 @@ function App() {
     <Header />
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/workouts" element={<WorkoutList workouts={workouts} onDeleteWorkout={deleteWorkout} onSave={saveWorkout}/>} />
+      <Route path="/workouts" element={
+        <WorkoutList 
+          workouts={workouts} 
+          onDeleteWorkout={deleteWorkout} 
+          onSave={saveWorkout}
+          onToggleFavorite={toggleFavorite}
+        />
+       }
+      />
       <Route path="/add-workout" element={<AddWorkout onAddWorkout={addWorkout} />} />
     </Routes>
    </div>

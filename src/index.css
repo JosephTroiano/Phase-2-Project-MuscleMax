@@ -394,17 +394,11 @@ Header h1 {
   font-size: 20px;
 }
 
-#sort-label {
-  margin-left: 30px;
-
-}
-
-#sort-checkbox {
-  margin-left: -30px;
-  height: 20px;
-  
-}
-
-#search-label {
-
+#sort-dropdown {
+  margin-top: 20px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid;
+  font-size: 20px;
+  width: 15%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }

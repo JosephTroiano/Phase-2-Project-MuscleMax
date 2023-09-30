@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
 
-function WorkoutItem({ workout, onDeleteWorkout, onSave }) {
+function WorkoutItem({ workout, onDeleteWorkout, onSave, onToggleFavorite }) {
   const [isEditing, setIsEditing] = useState(false);
   const [editedWorkout, setEditedWorkout] = useState({ ...workout });
-  const [isFavorite, setIsFavorite] = useState(false)
+  const [isFavorite, setIsFavorite] = useState(workout.isFavorite)
 
   function handleEditClick() {
     setIsEditing(true)
@@ -28,7 +28,8 @@ function WorkoutItem({ workout, onDeleteWorkout, onSave }) {
   }
 
   function handleFavClick() {
-    setIsFavorite((isFavorite) => !isFavorite)
+    setIsFavorite((isFavorite) => !isFavorite);
+    onToggleFavorite(workout.id, !isFavorite)
   }
 
   return (
