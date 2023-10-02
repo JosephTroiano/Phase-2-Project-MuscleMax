@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:rgb(57, 67, 83);
+  background-color:rgb(61, 77, 73);
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
   
 }
@@ -19,7 +19,7 @@ Header h1 {
   text-align: center;
   font-size: 65px;
   color: rgb(0, 0, 0);
-  border: 4px solid;
+  border-bottom: 4px solid;
   font-weight: bolder;
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   width: 50%;
@@ -32,7 +32,7 @@ Header h1 {
   text-align: center;
   font-size: 32px;
   background-color: rgb(255, 255, 255);
-  border: 4px solid rgb(0, 0, 0);
+  border-bottom: 4px solid rgb(0, 0, 0);
   width: 75%;
   margin-left: auto;
   margin-right: auto;
@@ -49,7 +49,7 @@ Header h1 {
 
 #add-workout-form {
   text-align: center;
-  border: 4px solid;
+  border-bottom: 4px solid;
   width: 40%;
   margin-left: auto;
   margin-right: auto;
@@ -60,14 +60,14 @@ Header h1 {
 #add-workout-form h1 {
   margin-bottom: 10px;
   font-size: 40px;
-  margin-top: 20px;
+  padding-top: 15px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-decoration: underline;
 }
 
 #add-workout-form input {
   margin-bottom: 25px;
-  border: 2px solid;
+  border-bottom: 2px solid;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 20px;
   color: rgb(34, 40, 50);
@@ -80,7 +80,7 @@ Header h1 {
 }
 
 #add-workout-form button {
-  border: 2px solid;
+  border-bottom: 2px solid;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
@@ -107,7 +107,7 @@ Header h1 {
 #workout-list-title {
   text-align: center;
   font-size: 50px;
-  border: 4px solid rgb(0, 0, 0);
+  border-bottom: 4px solid rgb(0, 0, 0);
   width: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -117,7 +117,7 @@ Header h1 {
 
 .workout-card {
   text-align: center;
-  border: 3px solid;
+  border-bottom: 3px solid;
   background-color: rgb(255, 255, 255);
   margin-left: auto;
   margin-right: auto;
@@ -128,7 +128,7 @@ Header h1 {
 .workout-card button {
   margin-bottom: 10px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  border: 2px solid;
+  border-bottom: 3px solid;
   cursor: pointer;
 }
 
@@ -137,6 +137,7 @@ Header h1 {
   font-size: 30px;
   color: rgb(34, 40, 50);
   text-decoration:underline;
+  padding-top: 10px;
 }
 
 .workout-card p {
@@ -178,7 +179,7 @@ Header h1 {
 #edit-form input {
   margin-bottom: 15px;
   margin-top: 15px;
-  border: 2px solid;
+  border-bottom: 2px solid;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 18px;
   color: rgb(34, 40, 50);
@@ -242,7 +243,7 @@ Header h1 {
 #sign-up-form {
   text-align: center;
   margin-top: 80px;
-  border: 3px solid;
+  border-bottom: 3px solid;
   margin-left: auto;
   margin-right: auto;
   width: 40%;
@@ -252,11 +253,12 @@ Header h1 {
 #sign-up-form h2 {
   font-size: 28px;
   text-decoration: underline;
+  padding:10px;
 }
 
 #sign-up-form input {
   margin-bottom: 25px;
-  border: 2px solid;
+  border-bottom: 2px solid;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 18px;
 }
@@ -272,14 +274,14 @@ Header h1 {
   margin-bottom: 18px; 
   font-size: 20px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  border: 2px solid;
+  border-bottom: 2px solid;
   cursor: pointer;
 }
 
 #log-in-form {
   text-align: center;
   margin-top: 80px;
-  border: 3px solid;
+  border-bottom: 3px solid;
   margin-left: auto;
   margin-right: auto;
   width: 40%;
@@ -289,11 +291,12 @@ Header h1 {
 #log-in-form h2 {
   font-size: 28px;
   text-decoration: underline;
+  padding: 10px;
 }
 
 #log-in-form input {
   margin-bottom: 25px;
-  border: 2px solid;
+  border-bottom: 2px solid;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 18px;
 } 
@@ -309,7 +312,7 @@ Header h1 {
   margin-bottom: 18px; 
   font-size: 20px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  border: 2px solid;
+  border-bottom: 2px solid;
   cursor: pointer;
 }
 
@@ -318,17 +321,18 @@ Header h1 {
 }
 
 #home-page-message {
-  border: 5px solid;
+  border-bottom: 5px solid;
   background-color: rgb(255, 255, 255);
   margin-top: 80px;
   width: 85%;
   margin-left: auto;
   margin-right: auto;
+  padding: 5px;
 }
 
 #home-page-message button {
   margin-bottom: 40px;
-  border: 2px solid;
+  border-bottom: 2px solid;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   cursor: pointer;
 }
@@ -345,22 +349,24 @@ Header h1 {
   text-align: center;
   margin-top: 90px;
   font-size: 30px;
-  border: 4px solid;
+  border-bottom: 4px solid;
   width: 55%;
   margin-left: auto;
   margin-right: auto;
   background-color: white;
+  padding: 1px;
 }
 
 #logged-in-message {
   text-align: center;
   margin-top: 90px;
   font-size: 30px;
-  border: 4px solid;
+  border-bottom: 4px solid;
   width: 55%;
   margin-left: auto;
   margin-right: auto;
   background-color: white;
+  padding: 1px;
 }
 
 #search-workouts {
@@ -374,7 +380,7 @@ Header h1 {
 
 #search-workouts input {
   background-color: rgb(255, 255, 255);
-  border: 2px solid;
+  border-bottom: 2px solid;
   font-size: 20px;
   width: 15%;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -397,7 +403,7 @@ Header h1 {
 #sort-dropdown {
   margin-top: 20px;
   background-color: rgb(255, 255, 255);
-  border: 2px solid;
+  border-bottom: 2px solid;
   font-size: 20px;
   width: 15%;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
