@@ -115,15 +115,34 @@ Header h1 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+
+
+
 .workout-card {
+  display: inline-block; 
+  width: calc(33.33% - 40px); 
+  height: 320px; 
+  margin: 20px; 
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  vertical-align: top; 
+  box-sizing: border-box; 
+  overflow: hidden; 
   text-align: center;
-  border-bottom: 3px solid;
-  background-color: rgb(255, 255, 255);
-  margin-left: auto;
-  margin-right: auto;
-  width: 45%;
-  margin-bottom: 20px;
+  border: 3px solid;
 }
+
+
+@media (max-width: 768px) {
+  .workout-card {
+    width: calc(50% - 40px); 
+  }
+}
+
+
+
 
 .workout-card button {
   margin-bottom: 10px;
@@ -135,9 +154,8 @@ Header h1 {
 .workout-card h2 {
   font-weight: bold;
   font-size: 30px;
-  color: rgb(34, 40, 50);
+  color: rgb(0, 0, 0);
   text-decoration:underline;
-  padding-top: 10px;
 }
 
 .workout-card p {
@@ -407,4 +425,10 @@ Header h1 {
   font-size: 20px;
   width: 15%;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+hr {
+  width: 90%;
+  border-color: rgb(255, 255, 255);
+  background-color: aliceblue;
 }

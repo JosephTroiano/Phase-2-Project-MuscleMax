@@ -26,8 +26,9 @@ function WorkoutList({ workouts, onDeleteWorkout, onSave, onToggleFavorite }) {
   }
 
   return (
-    <div>
+    <div className="workout-cards">
       <h1 id="workout-list-title">Workouts</h1>
+      <hr></hr>
       <form id="search-workouts">
         <label id="search-label">Search by name: </label>
         <input
@@ -48,6 +49,7 @@ function WorkoutList({ workouts, onDeleteWorkout, onSave, onToggleFavorite }) {
           </select>
         </div>
       </form>
+      
       {filteredWorkouts.map((workout) => (
         <WorkoutItem
           key={workout.id}
