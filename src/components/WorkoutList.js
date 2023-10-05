@@ -4,6 +4,12 @@ import WorkoutItem from "./WorkoutItem";
 function WorkoutList({ workouts, onDeleteWorkout, onSave, onToggleFavorite }) {
   const [searchTerm, setSearchTerm] = useState("");
   const [sortBy, setSortBy] = useState("none"); 
+  const [showFavorites, setShowFavorites] = useState(false);
+  
+
+  function handleSortChange(event) {
+    setSortBy(event.target.value);
+  }
 
   const filteredWorkouts = workouts
     .filter((workout) =>
@@ -21,9 +27,11 @@ function WorkoutList({ workouts, onDeleteWorkout, onSave, onToggleFavorite }) {
     );
   }
 
-  function handleSortChange(event) {
-    setSortBy(event.target.value);
-  }
+  const displayedWorkouts = showFavorites
+  ? filteredWorkouts.filter((workout) => workout.isFavorite)
+  : filteredWorkouts;
+
+ 
 
   return (
     <div className="workout-cards">
@@ -48,9 +56,18 @@ function WorkoutList({ workouts, onDeleteWorkout, onSave, onToggleFavorite }) {
             <option value="highToLow">High → Low</option>
           </select>
         </div>
+        <div id="favorites-option">
+          <label htmlFor="fav-checkbox">Show favorites only:</label>
+          <input 
+            id="fav-checkbox"
+            type="checkbox"
+            checked={showFavorites}
+            onChange={() => setShowFavorites(!showFavorites)}
+          />
+        </div>
       </form>
-      
-      {filteredWorkouts.map((workout) => (
+    
+      {displayedWorkouts.map((workout) => (
         <WorkoutItem
           key={workout.id}
           workout={workout}

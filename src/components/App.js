@@ -34,7 +34,6 @@ function App() {
       }
     })
 
-    setWorkouts(updatedWorkouts)
 
     fetch(`http://localhost:3000/workouts/${editedWorkout.id}`, {
       method: "PATCH",
@@ -48,6 +47,7 @@ function App() {
     .catch((error) => {
       console.log(error)
     })
+    setWorkouts(updatedWorkouts)
   }
   
 
@@ -68,6 +68,7 @@ function App() {
     .catch((error) => {
       console.log(error)
     });
+    setWorkouts(updatedWorkouts)
   }
 
   function toggleFavorite(workoutId, isFavorite) {
@@ -93,6 +94,8 @@ function App() {
     .catch((error) => {
       console.log(error)
     });
+
+    setWorkouts(updatedWorkouts)
   }
   
 

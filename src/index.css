@@ -25,7 +25,7 @@ Header h1 {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgb(255, 255, 255);
+  background-color:#ffffff;
 }
 
 .nav-bar {
@@ -123,7 +123,7 @@ Header h1 {
   width: calc(33.33% - 40px); 
   height: 320px; 
   margin: 20px; 
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 15px;
   border-radius: 2px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -149,6 +149,7 @@ Header h1 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   border-bottom: 3px solid;
   cursor: pointer;
+  
 }
 
 .workout-card h2 {
@@ -195,7 +196,7 @@ Header h1 {
 }
 
 #edit-form input {
-  margin-bottom: 15px;
+  margin-bottom: 8px;
   margin-top: 15px;
   border-bottom: 2px solid;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -357,7 +358,7 @@ Header h1 {
 
 #fav-button {
   border: none;
-  background-color: white;
+  background-color:#ffffff;
   margin-left: 20px;
   font-size: 30px;
   cursor: pointer;
@@ -406,7 +407,7 @@ Header h1 {
 
 #fav-button-clicked {
   border: none;
-  background-color: white;
+  background-color:#ffffff;
   margin-left: 20px;
   font-size: 30px;
   cursor: pointer;
@@ -423,7 +424,7 @@ Header h1 {
   background-color: rgb(255, 255, 255);
   border-bottom: 2px solid;
   font-size: 20px;
-  width: 15%;
+  width: 13%;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
@@ -431,4 +432,14 @@ hr {
   width: 90%;
   border-color: rgb(255, 255, 255);
   background-color: aliceblue;
+}
+
+#favorites-option {
+  margin-top: 15px;
+}
+
+#fav-checkbox {
+  height: 20px;
+  margin-left: -40px;
+  cursor: pointer;
 }

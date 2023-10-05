@@ -16,7 +16,7 @@
       "reps": 12,
       "days": "Wed, Fri",
       "id": 6,
-      "isFavorite": true
+      "isFavorite": false
     },
     {
       "exercise": "Bench Press",
@@ -25,7 +25,7 @@
       "reps": "10",
       "days": "Mon, Tues",
       "id": 9,
-      "isFavorite": false
+      "isFavorite": true
     },
     {
       "exercise": "Skullcrusher",
@@ -34,7 +34,7 @@
       "reps": "10",
       "days": "MWF",
       "id": 11,
-      "isFavorite": true
+      "isFavorite": false
     },
     {
       "exercise": "Squat",
@@ -43,15 +43,6 @@
       "reps": "15",
       "days": "M, W, F",
       "id": 13,
-      "isFavorite": false
-    },
-    {
-      "exercise": "Incline Press",
-      "weight": "75",
-      "sets": "4",
-      "reps": "12",
-      "days": "T, TH, SAT",
-      "id": 14,
       "isFavorite": true
     },
     {
@@ -62,15 +53,6 @@
       "days": "Mon, Tues",
       "isFavorite": false,
       "id": 15
-    },
-    {
-      "exercise": "Leg Raises",
-      "weight": "175",
-      "sets": "3",
-      "reps": "10",
-      "days": "Wed, Fri",
-      "isFavorite": true,
-      "id": 16
     }
   ]
 }
