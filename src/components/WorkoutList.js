@@ -6,7 +6,7 @@ function WorkoutList({ workouts, onDeleteWorkout, onSave, onToggleFavorite }) {
   const [sortBy, setSortBy] = useState("none"); 
   const [showFavorites, setShowFavorites] = useState(false);
   
-
+  
   function handleSortChange(event) {
     setSortBy(event.target.value);
   }
