@@ -32,7 +32,7 @@ Header h1 {
   text-align: center;
   font-size: 32px;
   background-color: rgb(137, 137, 137);
-  border-bottom: 3px solid rgb(40, 40, 40);
+  border-bottom: 3px solid rgb(37, 37, 37) ;
   width: 75%;
   margin-left: auto;
   margin-right: auto;
@@ -45,6 +45,8 @@ Header h1 {
   color: rgb(255, 255, 255);
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-decoration:none;
+  border-bottom: 2px solid;
+  border-bottom-width: 3px;
 }
 
 

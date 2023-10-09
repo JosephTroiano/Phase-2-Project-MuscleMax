@@ -7,7 +7,7 @@
       "reps": 12,
       "days": "Sat",
       "id": 5,
-      "isFavorite": false
+      "isFavorite": true
     },
     {
       "exercise": "Lat Pulldowns",
