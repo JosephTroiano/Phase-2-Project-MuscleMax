@@ -9,6 +9,7 @@ import AddWorkout from "./AddWorkout";
 
 function App() {
   const [workouts, setWorkouts] = useState([]);
+  
 
   useEffect(() => {
     fetch(`http://localhost:3000/workouts`)
@@ -20,10 +21,12 @@ function App() {
       console.log(error)
     });
   }, []); 
+
   
   function addWorkout(newWorkout) {
     setWorkouts([...workouts, newWorkout])
   } 
+
 
   function saveWorkout(editedWorkout) {
     const updatedWorkouts = workouts.map((workout) => {
@@ -55,7 +58,7 @@ function App() {
     const updatedWorkouts = workouts.filter((workout) => 
     workout.id !== deletedWorkout.id);
     setWorkouts(updatedWorkouts);
-
+    
     fetch(`http://localhost:3000/workouts/${deletedWorkout.id}`, {
       method: "DELETE",
       headers: {
@@ -70,6 +73,8 @@ function App() {
     });
     setWorkouts(updatedWorkouts)
   }
+
+
 
   function toggleFavorite(workoutId, isFavorite) {
     const updatedWorkouts = workouts.map((workout) => {
@@ -110,8 +115,7 @@ function App() {
           onDeleteWorkout={deleteWorkout} 
           onSave={saveWorkout}
           onToggleFavorite={toggleFavorite}
-        />
-       }
+        />}
       />
       <Route path="/add-workout" element={<AddWorkout onAddWorkout={addWorkout} />} />
     </Routes>

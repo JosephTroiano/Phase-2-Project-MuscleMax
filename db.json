@@ -53,6 +53,15 @@
       "days": "Mon, Tues",
       "isFavorite": false,
       "id": 15
+    },
+    {
+      "exercise": "Curl",
+      "weight": "1",
+      "sets": "1",
+      "reps": "1",
+      "days": "NEVER",
+      "isFavorite": true,
+      "id": 16
     }
   ]
 }

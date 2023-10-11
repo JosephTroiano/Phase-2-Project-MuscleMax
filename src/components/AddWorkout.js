@@ -6,6 +6,7 @@ function AddWorkout({ onAddWorkout }) {
   const [sets, setSets] = useState('');
   const [reps, setReps] = useState('');
   const [days, setDays] = useState('');
+ 
 
   function handleSubmit(e) {
     e.preventDefault()
