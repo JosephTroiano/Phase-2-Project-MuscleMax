@@ -15,7 +15,7 @@ function WorkoutList({ workouts, onDeleteWorkout, onSave, onToggleFavorite }) {
     .filter((workout) =>
       workout.exercise.toLowerCase().includes(searchTerm.toLowerCase())
     )
-    .slice();
+    
 
   if (sortBy === "lowToHigh") {
     filteredWorkouts.sort((workout1, workout2) =>

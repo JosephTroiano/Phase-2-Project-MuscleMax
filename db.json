@@ -2,7 +2,7 @@
   "workouts": [
     {
       "exercise": "Tricep Extensions",
-      "weight": "500",
+      "weight": "30",
       "sets": 4,
       "reps": 12,
       "days": "Sat",
@@ -46,22 +46,13 @@
       "isFavorite": true
     },
     {
-      "exercise": "Decline PRess",
-      "weight": "200",
+      "exercise": "Lunges",
+      "weight": "225",
       "sets": "3",
-      "reps": "10",
-      "days": "Mon, Tues",
-      "isFavorite": false,
-      "id": 15
-    },
-    {
-      "exercise": "Curl",
-      "weight": "1",
-      "sets": "1",
-      "reps": "1",
-      "days": "NEVER",
+      "reps": "12",
+      "days": "Everyday",
       "isFavorite": true,
-      "id": 16
+      "id": 14
     }
   ]
 }
