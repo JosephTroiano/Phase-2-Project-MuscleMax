@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:rgb(46, 58, 67);
+  background-color:rgb(70, 87, 100);
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
   
 }
@@ -179,14 +179,14 @@ Header h1 {
 
 #edit-button {
   margin-right: 20px;
-  font-size: 18px;
-  background-color: rgb(126, 152, 135);
+  font-size: 20px;
+  background-color: rgb(149, 149, 149);
   font-weight: bold;
   margin-bottom: 20px;
 }
 
 #delete-button {
-  font-size: 18px;
+  font-size: 20px;
   background-color: brown;
   font-weight: bold;
 }
@@ -224,7 +224,7 @@ Header h1 {
 }
 
 #edit-form button {
-  background-color: rgb(126, 152, 135);
+  background-color: rgb(77, 120, 92);
   font-size: 18px;
   font-weight: bold;
   margin-top: 10px;
@@ -368,8 +368,19 @@ Header h1 {
   border: none;
   background-color:#ffffff;
   margin-left: 20px;
+  margin-right: 25px;
   font-size: 30px;
   cursor: pointer;
+}
+
+#fav-button-clicked {
+  border: none;
+  background-color:#ffffff;
+  margin-left: 20px;
+  margin-right: 25px;
+  font-size: 30px;
+  cursor: pointer;
+  color: gold;
 }
 
 #signed-up-message {
@@ -413,14 +424,6 @@ Header h1 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-#fav-button-clicked {
-  border: none;
-  background-color:#ffffff;
-  margin-left: 20px;
-  font-size: 30px;
-  cursor: pointer;
-  color: gold;
-}
 
 .error {
   color: red;

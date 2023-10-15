@@ -85,13 +85,13 @@ function WorkoutItem({ workout, onDeleteWorkout, onSave, onToggleFavorite }) {
       <p>Sets & Reps: {workout.sets} x {workout.reps}</p>
       <p>Days: {workout.days}</p>
       <button id="edit-button" onClick={handleEditClick}>EDIT</button>
-      <button id="delete-button" onClick={handleDeleteClick}>DELETE</button>
       {isFavorite ? (
         <button id='fav-button-clicked' onClick={handleFavClick}>★</button> )
         : (
           <button id='fav-button' onClick={handleFavClick}>☆</button>
         )
       }
+      <button id="delete-button" onClick={handleDeleteClick}>DELETE</button>
       </>
       )}
     </div>
