@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:rgb(70, 87, 100);
+  background-color:rgb(125, 155, 177);
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
   
 }
@@ -18,7 +18,7 @@ code {
 Header h1 {
   text-align: center;
   font-size: 65px;
-  color: rgb(0, 0, 0);
+  color: rgb(38, 56, 78);
   border-bottom: 5px solid;
   font-weight: bolder;
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -31,8 +31,8 @@ Header h1 {
 .nav-bar {
   text-align: center;
   font-size: 32px;
-  background-color: rgb(157, 157, 157);
-  border-bottom: 3px solid rgb(37, 37, 37) ;
+  background-color: rgb(38, 56, 78);
+  border-bottom: 3px solid rgb(38, 56, 78);
   width: 75%;
   margin-left: auto;
   margin-right: auto;
@@ -56,7 +56,7 @@ Header h1 {
 
 #add-workout-form {
   text-align: center;
-  border-bottom: 4px solid;
+  border-bottom: 4px solid rgb(38, 56, 78);
   width: 40%;
   margin-left: auto;
   margin-right: auto;
@@ -70,6 +70,7 @@ Header h1 {
   padding-top: 15px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-decoration: underline;
+  color: rgb(38, 56, 78);
 }
 
 #add-workout-form input {
@@ -84,12 +85,13 @@ Header h1 {
   font-size: 25px;
   margin-right: 10px;
   font-weight: bold;
+  color: rgb(38, 56, 78);
 }
 
 #add-workout-form button {
   border-bottom: 2px solid;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  background-color: #aeaeae;
+  background-color: rgb(125, 155, 177);
 }
 
 #add-workout-form input[name="exercise"] {
@@ -114,8 +116,10 @@ Header h1 {
 
 #workout-list-title {
   text-align: center;
+  color: rgb(38, 56, 78);
   font-size: 50px;
   border-bottom: 4px solid rgb(0, 0, 0);
+  border-color: rgb(38, 56, 78);
   width: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -164,7 +168,7 @@ Header h1 {
 .workout-card h2 {
   font-weight: bold;
   font-size: 30px;
-  color: rgb(0, 0, 0);
+  color: rgb(42, 67, 87);
   text-decoration:underline;
 }
 
@@ -182,7 +186,7 @@ Header h1 {
 #edit-button {
   margin-right: 20px;
   font-size: 20px;
-  background-color: rgb(149, 149, 149);
+  background-color: rgb(125, 155, 177);
   font-weight: bold;
   margin-bottom: 20px;
   border-radius: 5px;
@@ -190,7 +194,7 @@ Header h1 {
 
 #delete-button {
   font-size: 20px;
-  background-color: brown;
+  background-color: rgb(255, 0, 0);
   font-weight: bold;
   border-radius: 5px;
 }
@@ -199,6 +203,7 @@ Header h1 {
   margin-bottom: 20px;
   font-size: 20px;
   cursor: pointer;
+  background-color: rgb(207, 207, 207);
 }
 
 #edit-form label {
@@ -270,13 +275,13 @@ Header h1 {
   margin-top: 20px;
   font-weight: bold;
   cursor: pointer;
-  background-color: #aeaeae;;
+  background-color: rgb(207, 207, 207);;
 }
 
 #sign-up-form {
   text-align: center;
   margin-top: 80px;
-  border-bottom: 3px solid;
+  border-bottom: 3px solid rgb(38, 56, 78);
   margin-left: auto;
   margin-right: auto;
   width: 40%;
@@ -287,6 +292,7 @@ Header h1 {
   font-size: 28px;
   text-decoration: underline;
   padding:10px;
+  color: rgb(38, 56, 78);
 }
 
 #sign-up-form input {
@@ -300,6 +306,7 @@ Header h1 {
   font-size: 25px;
   font-weight: bold;
   margin-right: 10px;
+  color: rgb(38, 56, 78);
 }
 
 #sign-up-form button {
@@ -309,6 +316,7 @@ Header h1 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   border-bottom: 2px solid;
   cursor: pointer;
+  background-color: rgb(207, 207, 207);
 }
 
 #log-in-form {
@@ -325,6 +333,7 @@ Header h1 {
   font-size: 28px;
   text-decoration: underline;
   padding: 10px;
+  color: rgb(42, 67, 87);
 }
 
 #log-in-form input {
@@ -338,6 +347,7 @@ Header h1 {
   font-size: 25px;
   font-weight: bold;
   margin-right: 10px;
+  color: rgb(38, 56, 78);
 }
 
 #log-in-form button {
@@ -347,6 +357,7 @@ Header h1 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   border-bottom: 2px solid;
   cursor: pointer;
+  background-color: rgb(207, 207, 207);
 }
 
 #go-back-button {
@@ -362,6 +373,7 @@ Header h1 {
   margin-right: auto;
   padding: 5px;
   background-color: rgb(255, 255, 255);
+  color: rgb(38, 56, 78);
 }
 
 #home-page-message button {
@@ -461,3 +473,4 @@ hr {
   margin-left: -40px;
   cursor: pointer;
 }
+
