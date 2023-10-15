@@ -139,6 +139,7 @@ Header h1 {
   overflow: hidden; 
   text-align: center;
   border: 2px solid;
+  border-radius: 10px;
 }
 
 
