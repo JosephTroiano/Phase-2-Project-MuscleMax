@@ -6,8 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color:rgb(125, 155, 177);
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
-  
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 code {
@@ -143,8 +142,8 @@ Header h1 {
   box-sizing: border-box; 
   overflow: hidden; 
   text-align: center;
-  border: 2px solid;
-  border-radius: 5px;
+  border: 3px solid rgb(38, 56, 78);
+  border-radius: 2px;
 }
 
 
@@ -168,7 +167,7 @@ Header h1 {
 .workout-card h2 {
   font-weight: bold;
   font-size: 30px;
-  color: rgb(42, 67, 87);
+  color: rgb(38, 56, 78);
   text-decoration:underline;
 }
 
@@ -178,10 +177,6 @@ Header h1 {
   color:rgb(0, 0, 0);
 }
 
-.workout-card span {
-  color: rgb(34, 40, 50);
-  margin-left: 10px;
-}
 
 #edit-button {
   margin-right: 20px;
@@ -189,14 +184,14 @@ Header h1 {
   background-color: rgb(77, 120, 92);
   font-weight: bold;
   margin-bottom: 20px;
-  border-radius: 3px;
+  border: 2px solid rgb(38, 56, 78);
 }
 
 #delete-button {
   font-size: 20px;
   background-color: rgb(207, 0, 0);
   font-weight: bold;
-  border-radius: 3px;
+  border: 2px solid rgb(38, 56, 78)
 }
 
 #add-workout-form button {
@@ -209,6 +204,7 @@ Header h1 {
 #edit-form label {
   font-size: 22px;
   font-weight: bold;
+  color: rgb(38, 56, 78);
 }
 
 #edit-form input {
@@ -217,7 +213,6 @@ Header h1 {
   border-bottom: 2px solid;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 18px;
-  color: rgb(34, 40, 50);
 }
 
 #edit-form input[name="weight"] {
@@ -238,7 +233,7 @@ Header h1 {
   font-weight: bold;
   margin-top: 10px;
   cursor: pointer;
-  border-radius: 5px;
+  border: 2px solid rgb(38, 56, 78);
 }
 
 #edit-form input[name="exercise"] {
@@ -474,3 +469,6 @@ hr {
   cursor: pointer;
 }
 
+.workout-labels {
+  color: rgb(38, 56, 78);
+}
