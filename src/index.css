@@ -432,7 +432,7 @@ Header h1 {
 
 #search-workouts input {
   background-color: rgb(255, 255, 255);
-  border-bottom: 2px solid;
+  border: 2px solid rgb(38, 56, 78);
   font-size: 20px;
   width: 15%;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -447,16 +447,17 @@ Header h1 {
 #sort-dropdown {
   margin-top: 20px;
   background-color: rgb(255, 255, 255);
-  border-bottom: 2px solid;
+  border: 2px solid rgb(38, 56, 78);
   font-size: 20px;
   width: 13%;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 hr {
-  width: 90%;
-  border-color: rgb(255, 255, 255);
-  background-color: aliceblue;
+  width: 80%;
+  border-color: white;
+  background-color: white;
+  border: 1px solid white;
 }
 
 #favorites-option {
