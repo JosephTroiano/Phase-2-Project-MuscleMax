@@ -6,9 +6,9 @@ function Header() {
     <header>
       <h1>MuscleMAX</h1>
       <nav className="nav-bar">
-        <Link to="/" className="nav-link">Home</Link>
-        <Link to="/workouts" className="nav-link">Workouts</Link>
-        <Link to="/add-workout" className="nav-link">Add Workout</Link>
+        <Link to="/" className="nav-link">| Home |</Link>
+        <Link to="/workouts" className="nav-link">| Workouts |</Link>
+        <Link to="/add-workout" className="nav-link">| Add Workout |</Link>
       </nav>
     </header>
   )

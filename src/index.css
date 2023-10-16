@@ -31,7 +31,7 @@ Header h1 {
   text-align: center;
   font-size: 32px;
   background-color: rgb(38, 56, 78);
-  border-bottom: 3px solid rgb(38, 56, 78);
+  border-bottom: 2px solid white;
   width: 75%;
   margin-left: auto;
   margin-right: auto;
@@ -44,7 +44,6 @@ Header h1 {
   color: rgb(255, 255, 255);
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-decoration:none;
-  border-bottom: 2px solid;
   border-bottom-width: 3px;
 }
 
@@ -70,6 +69,7 @@ Header h1 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-decoration: underline;
   color: rgb(38, 56, 78);
+  font-style: italic;
 }
 
 #add-workout-form input {
@@ -115,15 +115,15 @@ Header h1 {
 
 #workout-list-title {
   text-align: center;
-  color: rgb(38, 56, 78);
-  font-size: 50px;
-  border-bottom: 4px solid rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: 60px;
   border-color: rgb(38, 56, 78);
   width: 50%;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgb(255, 255, 255);
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-style: italic;
+  text-decoration: underline;
 }
 
 
