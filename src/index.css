@@ -144,7 +144,7 @@ Header h1 {
   overflow: hidden; 
   text-align: center;
   border: 2px solid;
-  border-radius: 7px;
+  border-radius: 5px;
 }
 
 
@@ -186,17 +186,17 @@ Header h1 {
 #edit-button {
   margin-right: 20px;
   font-size: 20px;
-  background-color: rgb(99, 138, 158);
+  background-color: rgb(77, 120, 92);
   font-weight: bold;
   margin-bottom: 20px;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 #delete-button {
   font-size: 20px;
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(207, 0, 0);
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 #add-workout-form button {
