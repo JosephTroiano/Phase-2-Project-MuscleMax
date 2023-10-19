@@ -95,7 +95,12 @@ function AddWorkout({ onAddWorkout }) {
           onChange={(e) => setDays(e.target.value)}
         />
         <br></br>
-        <button type="submit">Submit</button>
+        <button 
+        type="submit"
+        style={{ backgroundColor: `rgb(38, 56, 78)`}}
+        >
+        Submit
+        </button>
       </form>
     </div>
   )

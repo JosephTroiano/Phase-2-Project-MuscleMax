@@ -32,7 +32,7 @@ Header h1 {
   font-size: 32px;
   background-color: rgb(38, 56, 78);
   border-bottom: 2px solid white;
-  width: 75%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   font-weight: bold;
@@ -44,7 +44,8 @@ Header h1 {
   color: rgb(255, 255, 255);
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-decoration:none;
-  border-bottom-width: 3px;
+  
+  
 }
 
 
@@ -88,9 +89,10 @@ Header h1 {
 }
 
 #add-workout-form button {
-  border-bottom: 2px solid;
+  background-color: rgb(72, 38, 105);
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  background-color: rgb(125, 155, 177);
+  color: #ffffff;
+  border: 1px solid black;
 }
 
 #add-workout-form input[name="exercise"] {
@@ -124,9 +126,8 @@ Header h1 {
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-style: italic;
   text-decoration: underline;
+  margin-bottom: 30px;
 }
-
-
 
 
 .workout-card {
@@ -152,7 +153,6 @@ Header h1 {
     width: calc(50% - 40px); 
   }
 }
-
 
 
 
@@ -281,6 +281,7 @@ Header h1 {
   margin-right: auto;
   width: 40%;
   background-color: rgb(255, 255, 255);
+  
 }
 
 #sign-up-form h2 {
@@ -309,9 +310,10 @@ Header h1 {
   margin-bottom: 18px; 
   font-size: 20px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  border-bottom: 2px solid;
+  border: 1px solid black;
   cursor: pointer;
-  background-color: rgb(207, 207, 207);
+  background-color: rgb(38, 56, 78);
+  color: #ffffff;
 }
 
 #log-in-form {
@@ -350,9 +352,10 @@ Header h1 {
   margin-bottom: 18px; 
   font-size: 20px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  border-bottom: 2px solid;
+  border: 1px solid black;
   cursor: pointer;
-  background-color: rgb(207, 207, 207);
+  background-color: rgb(38, 56, 78);
+  color: #ffffff;
 }
 
 #go-back-button {
@@ -373,9 +376,12 @@ Header h1 {
 
 #home-page-message button {
   margin-bottom: 40px;
-  border-bottom: 2px solid;
+  border: 1px solid;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   cursor: pointer;
+  background-color: rgb(38, 56, 78);
+  color: white;
+  border-color: black;
 }
 
 #fav-button {
@@ -458,6 +464,7 @@ hr {
   border-color: white;
   background-color: white;
   border: 1px solid white;
+  margin-bottom: 30px;
 }
 
 #favorites-option {
