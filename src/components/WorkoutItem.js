@@ -6,7 +6,7 @@ function WorkoutItem({ workout, onDeleteWorkout, onSave, onToggleFavorite }) {
   const [editedWorkout, setEditedWorkout] = useState({ ...workout });
   const [isFavorite, setIsFavorite] = useState(workout.isFavorite);
 
-  console.log(editedWorkout)
+  
 
   function handleEditClick() {
     setIsEditing(true)
