@@ -67,11 +67,13 @@ function App() {
       body: JSON.stringify(deletedWorkout)
     })
     .then((r) => r.json())
-    .then(() => {console.log("Success")})
+    .then(() => {
+      setWorkouts(updatedWorkouts);
+      alert("Workout Removed.")
+    })
     .catch((error) => {
       console.log(error)
     });
-    setWorkouts(updatedWorkouts)
   }
 
 

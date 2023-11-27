@@ -28,15 +28,6 @@
       "isFavorite": true
     },
     {
-      "exercise": "Skullcrusher",
-      "weight": "75",
-      "sets": "4",
-      "reps": "10",
-      "days": "MWF",
-      "id": 11,
-      "isFavorite": false
-    },
-    {
       "exercise": "Squat",
       "weight": "285",
       "sets": "2",
@@ -46,13 +37,22 @@
       "isFavorite": true
     },
     {
-      "exercise": "Lunges",
-      "weight": "225",
+      "exercise": "Decline Press",
+      "weight": "265",
       "sets": "3",
-      "reps": "12",
-      "days": "Everyday",
+      "reps": "10",
+      "days": "Mon, Wed, Fri",
       "isFavorite": false,
       "id": 14
+    },
+    {
+      "exercise": "Plank",
+      "weight": "0",
+      "sets": "4",
+      "reps": "1",
+      "days": "Thur, Fri",
+      "isFavorite": false,
+      "id": 15
     }
   ]
 }

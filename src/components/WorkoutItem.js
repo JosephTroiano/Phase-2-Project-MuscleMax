@@ -4,7 +4,9 @@ import React, { useState } from "react";
 function WorkoutItem({ workout, onDeleteWorkout, onSave, onToggleFavorite }) {
   const [isEditing, setIsEditing] = useState(false);
   const [editedWorkout, setEditedWorkout] = useState({ ...workout });
-  const [isFavorite, setIsFavorite] = useState(workout.isFavorite)
+  const [isFavorite, setIsFavorite] = useState(workout.isFavorite);
+
+  console.log(editedWorkout)
 
   function handleEditClick() {
     setIsEditing(true)
