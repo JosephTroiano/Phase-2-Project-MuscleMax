@@ -43,12 +43,9 @@ function AddWorkout({ onAddWorkout }) {
 
     alert("Workout Added!")
 
-
   } else {
     alert("**PLEASE FILL OUT ALL FIELDS**")
   }};
-
-
 
   return (
     <div>

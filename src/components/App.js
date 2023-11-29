@@ -37,7 +37,6 @@ function App() {
       }
     })
 
-
     fetch(`http://localhost:3000/workouts/${editedWorkout.id}`, {
       method: "PATCH",
       headers: {
@@ -46,18 +45,18 @@ function App() {
       body: JSON.stringify(editedWorkout)
     })
     .then((r) => r.json())
-    .then(() => {console.log("Success")})
+    .then(() => {
+      setWorkouts(updatedWorkouts)
+    })
     .catch((error) => {
       console.log(error)
-    })
-    setWorkouts(updatedWorkouts)
+    });
   }
   
 
   function deleteWorkout(deletedWorkout) {
     const updatedWorkouts = workouts.filter((workout) => 
     workout.id !== deletedWorkout.id);
-    setWorkouts(updatedWorkouts);
     
     fetch(`http://localhost:3000/workouts/${deletedWorkout.id}`, {
       method: "DELETE",
@@ -96,13 +95,11 @@ function App() {
     })
     .then((r) => r.json())
     .then(() => {
-      console.log("Success")
+      setWorkouts(updatedWorkouts)
     })
     .catch((error) => {
       console.log(error)
     });
-
-    setWorkouts(updatedWorkouts)
   }
   
 

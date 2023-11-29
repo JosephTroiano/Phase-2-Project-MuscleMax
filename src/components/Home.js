@@ -7,7 +7,6 @@ function Home() {
   const [password, setPassword] = useState("");
   const [isSignedUp, setIsSignedUp] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-
   const [formError, setFormError] = useState("");
 
   function handleButtonClick(newView) {
